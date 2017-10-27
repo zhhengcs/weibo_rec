@@ -2,8 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <script type="text/javascript" async="" src="weibo_files/ga.js"></script>
-    <script charset="UTF-8" type="text/javascript" src="weibo_files/core.js"></script>
+<!--     <script type="text/javascript" async="" src="weibo_files/ga.js"></script>
+  <>
+ -->
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-Frame-Options" content="DENY ">
     <meta content="IE=8" http-equiv="X-UA-Compatible">
@@ -17,43 +19,13 @@
     <link href="weibo_files/search_directarea.css" type="text/css" rel="stylesheet" charset="utf-8">
     <link href="weibo_files/general.css" type="text/css" rel="stylesheet" charset="utf-8">
     <link href="weibo_files/hot_ranktit.css" type="text/css" rel="stylesheet" charset="utf-8">
-    <script type="text/javascript" charset="utf-8" async="" src="weibo_files/suda.js"></script>
-    <script type="text/javascript">
-      var $CONFIG = {};
-      $CONFIG['islogin'] = '1';
-      $CONFIG['uid'] = '3822687553';
-      $CONFIG['nick'] = '张恒DUT';
-      $CONFIG['domain'] = 'zhhengcs';
-      $CONFIG['watermark'] = 'zhhengcs';
-      $CONFIG['prov'] = '21:辽宁';
-      $CONFIG['city'] = '2:大连';
-      $CONFIG['setCover'] = 1; //ie6hack
-      $CONFIG['version'] = '20171025173500';
-      $CONFIG['bigpipe'] = 'true';
-      $CONFIG['timeDiff'] = (new Date() - 1509012776000);
-      $CONFIG['product'] = 'search';
-      $CONFIG['pageid'] = 'user';
-      $CONFIG['skin'] = '';
-      $CONFIG['lang'] = 'zh-cn';
-      $CONFIG['jsPath'] = 'https://js.t.sinajs.cn/t4/';
-      $CONFIG['cssPath'] = 'https://img.t.sinajs.cn/t4/';
-      $CONFIG['imgPath'] = 'https://img.t.sinajs.cn/t4/';
-      $CONFIG['servertime'] = 1509012776;
-      $CONFIG['ad_url_jump'] = '';
-      $CONFIG['bpType'] = 'main';
-      $CONFIG['$webim'] = 1;
-      $CONFIG['mJsPath'] = ['https://js{n}.t.sinajs.cn/t4/', 1, 2];
-      $CONFIG['mCssPath'] = ['https://img{n}.t.sinajs.cn/t4/', 1, 2];
-      $CONFIG['s_domain'] = 'http://s.weibo.com';
-      $CONFIG['s_search'] = '%25E5%25A4%25A7%25E8%25BF%259E';
-      </script>
+ 
     <link href="weibo_files/usually.css" type="text/css" rel="stylesheet" charset="utf-8">
     <link href="weibo_files/WB_h5video.css" type="text/css" rel="stylesheet" charset="utf-8">
     <link href="weibo_files/rela_person.css" type="text/css" rel="stylesheet" charset="utf-8">
     <link rel="Stylesheet" type="text/css" charset="utf-8" href="weibo_files/PCD_mplayer.css">
     <div style="position: absolute; top: -9999px; left: -9999px;"></div>
     <link rel="Stylesheet" type="text/css" charset="utf-8" href="weibo_files/WB_outframe.css">
-    <style></style>
     <link rel="Stylesheet" type="text/css" charset="utf-8" href="weibo_files/pl_topcon.css" id="css_15090124229642">
     <div style="position: absolute; top: -9999px; left: -9999px;"></div>
     <link rel="Stylesheet" type="text/css" charset="utf-8" href="weibo_files/pl_tab_a.css" id="css_15090124229643">
@@ -70,20 +42,29 @@
     <div style="position: absolute; top: -9999px;">
         <div id="js_style_css_module_global_WB_outframe"></div>
     </div>
-    <style></style>
+    
     <link type="text/css" rel="stylesheet" charset="utf-8" href="weibo_files/W_outFrame.css">
     <link type="text/css" rel="stylesheet" charset="utf-8" href="weibo_files/feedSDK.css">
     <link type="text/css" rel="stylesheet" charset="utf-8" href="weibo_files/connect_layer.css">
-    <script type="text/javascript" src="weibo_files/ytbxtre-a.js"></script>
+<!--     <script type="text/javascript" src="weibo_files/ytbxtre-a.js"></script> -->
+
+    <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+    </script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+    </script>
+    
 </head>
 
-<body class="S_person " onload="shouhh()">
+<body onload="showhh()" class="S_person">
+  
     <div class="S_wrap ">
     <div class="S_main">
       <div class="S_main_bg">
         <div class="search_head clearfix" id="pl_common_searchTop">
             <div class="search_head_formbox">
-                <div class="search_logo"><a suda-data="key=tblog_search_user&amp;value=user_logo" href="http://s.weibo.com/?Refer=STopic_icon" class="logo_img"></a></div>
+                <div class="search_logo">
+                  <a suda-data="key=tblog_search_user&amp;value=user_logo" href="http://s.weibo.com/?Refer=STopic_icon" class="logo_img"></a>
+                </div>
                 <ul class="formbox_tab clearfix formbox_tab2" node-type="searchItems">
                 </ul>
                 <div class="search_input clearfix">
@@ -109,7 +90,8 @@
             <div class="S_plc" id="plc_main">
                 <div class="S_content clearfix">
                     <div class="S_content_l">
-                        <div id="pl_common_pinyinerr"></div>
+                        <div id="pl_common_pinyinerr">
+                        </div>
                         <div id="pl_common_totalshow">
                             <div class="WB_tab_a">
                                 <div class="tab_box tab_box_a tab_box_a_r5 clearfix">
@@ -153,26 +135,26 @@
                                         </li>
                                         <li class="S_bg2">
                                             <a class="S_txt1" suda-data="key=tblog_search_user&amp;value=user_filter_school" href="javascript:void(0)">
-                                            <span class="t S_bg2" action-type="search" action-data="flag=school">学校</span>
-                                            <span class="b">
-                                          <span class="b1">
-                                          <em class="l"><i class="S_bg2"></i></em>
-                                          <em class="r"><i class="S_bg2"></i></em>
-                                          </span>
-                                          <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
-                                            </span>
+                                              <span class="t S_bg2" action-type="search" action-data="flag=school">学校</span>
+                                              <span class="b">
+                                              <span class="b1">
+                                                <em class="l"><i class="S_bg2"></i></em>
+                                                <em class="r"><i class="S_bg2"></i></em>
+                                              </span>
+                                              <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
+                                              </span>
                                             </a>
                                         </li>
                                         <li class="S_bg2">
                                             <a class="S_txt1" suda-data="key=tblog_search_user&amp;value=user_filter_firm" href="javascript:void(0)">
-                                            <span class="t S_bg2" action-type="search" action-data="flag=work">公司</span>
-                                            <span class="b">
-                                          <span class="b1">
-                                          <em class="l"><i class="S_bg2"></i></em>
-                                          <em class="r"><i class="S_bg2"></i></em>
-                                          </span>
-                                          <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
-                                            </span>
+                                              <span class="t S_bg2" action-type="search" action-data="flag=work">公司</span>
+                                              <span class="b">
+                                              <span class="b1">
+                                                <em class="l"><i class="S_bg2"></i></em>
+                                                <em class="r"><i class="S_bg2"></i></em>
+                                               </span>
+                                              <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
+                                              </span>
                                             </a>
                                         </li>
                                         <li class="li_last S_bg2"></li>
@@ -182,24 +164,35 @@
                                 </div>
                             </div>
                         </div>
+
                         <div id="pl_user_filtertab">
                             <div class="WB_cardwrap S_bg2">
                                 <div class="search_tab clearfix" node-type="filtertab">
                                     <div class="basic_search clearfix">
                                         <div class="tab_l">
                                             <ul class="tab_list">
-                                                <li>所有地区<a suda-data="key=tblog_search_user&amp;value=user_filter_change" href="javascript:;" class="change" node-type="show_region">[切换]</a></li>
-                                                <li><em class="W_vline W_textb">|</em></li>
+                                                <li>所有地区
+                                                  <a suda-data="key=tblog_search_user&amp;value=user_filter_change" href="javascript:;" class="change" node-type="show_region">[切换]
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <em class="W_vline W_textb">|
+                                                  </em>
+                                                </li>
                                                 <li>
                                                     <a suda-data="key=tblog_search_user&amp;value=user_filter_auth_all" href="javascript:;" class="W_moredownb" node-type="showSortLayer">
-                                                     <span>所有用户</span>
-                                                     <span class="more"></span></a>
+                                                      <span>所有用户</span>
+                                                      <span class="more"></span>
+                                                    </a>
                                                 </li>
-                                                <li><em class="W_vline">|</em></li>
+                                                <li>
+                                                  <em class="W_vline">|</em>
+                                                </li>
                                                 <li>
                                                     <a suda-data="key=tblog_search_user&amp;value=user_filter_gender_all" href="javascript:;" class="W_moredownb" node-type="show_gender">
-                                                   <span>不限性别</span>
-                                                   <span class="more"></span></a>
+                                                      <span>不限性别</span>
+                                                      <span class="more"></span>
+                                                    </a>
                                                 </li>
                                                 <li><em class="W_vline">|</em></li>
                                                 <li>
@@ -210,7 +203,8 @@
                                             </ul>
                                         </div>
                                         <div class="tab_r">
-                                            <a href="javascript:;" suda-data="key=tblog_search_user&amp;value=user_filter_more" class="more_factor" node-type="moreFactor">更多条件</a>
+                                            <a href="javascript:;" suda-data="key=tblog_search_user&amp;value=user_filter_more" class="more_factor" node-type="moreFactor">更多条件
+                                            </a>
                                         </div>
                                     </div>
                                     <div>
@@ -220,10 +214,22 @@
                                             <li><a href="javascript:void(0);" action-data="gender=women" action-type="gender"><span class="txt">女</span></a></li>
                                         </ul>
                                         <ul class="search_more_ul search_more_ul_04 clearfix" style="display: none; width: 68px; left: 253px; top: 267px;" node-type="userSortWrap">
-                                            <li><a href="javascript:void(0);" action-data="sort=all" action-type="sort" class="current"><span class="txt">不限</span></a></li>
-                                            <li><a href="javascript:void(0);" action-data="sort=org_vip" action-type="sort"><span class="txt">机构认证</span></a></li>
-                                            <li><a href="javascript:void(0);" action-data="sort=per_vip" action-type="sort"><span class="txt">个人认证</span></a></li>
-                                            <li><a href="javascript:void(0);" action-data="sort=ord" action-type="sort"><span class="txt">普通用户</span></a></li>
+                                            <li>
+                                                <a href="javascript:void(0);" action-data="sort=all" action-type="sort" class="current"><span class="txt">不限</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" action-data="sort=org_vip" action-type="sort"><span class="txt">机构认证</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" action-data="sort=per_vip" action-type="sort"><span class="txt">个人认证</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" action-data="sort=ord" action-type="sort"><span class="txt">普通用户</span>
+                                                </a>
+                                            </li>
                                         </ul>
                                         <ul class="search_more_ul search_more_ul_04 clearfix" style="display: none; width: 70px; left: 410px; top: 267px;" node-type="userAgeWrap">
                                             <li><a href="javascript:void(0);" action-data="age=all" action-type="age" class="current"><span class="txt">不限</span></a></li>
@@ -237,17 +243,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="pl_user_filtertips"></div>
+                        <div id="pl_user_filtertips"> 
+                        </div>
+
                         <div class="WB_cardwrap S_bg2">
                             <div id="pl_user_feedList">
                                 <div class="WB_cardwrap S_bg2">
                                     <div class="search_feed">
                                         <div class="person_list_feed clearfix">
-                                            <div class="pl_personlist" id='user_list'>
+                                            <div class="pl_personlist" id="user_list">
                                                 <div class="list_person clearfix">
-                                                    <div class="person_pic"><a target="_blank" href="http://weibo.com/dlpolice?refer_flag=1001030201_" title="大连公安" suda-data="key=tblog_search_user&amp;value=user_feed_1_icon"><img class="W_face_radius" src="weibo_files/68f1ab15jw1e8qgp5bmzyj2050050aa8.jpg" usercard="id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="1760668437" height="80" width="80"></a></div>
+                                                    <div class="person_pic"><a target="_blank" href="http://weibo.com/dlpolice?refer_flag=1001030201_" title="大连公安" suda-data="key=tblog_search_user&amp;value=user_feed_1_icon"><img class="W_face_radius" src="weibo_files/68f1ab15jw1e8qgp5bmzyj2050050aa8.jpg" usercard="id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="1760668437" height="80" width="80"></a>
+                                                    </div>
                                                     <div class="person_adbtn">
-                                                        <a href="javascript:void(0);" class="W_btn_b6 W_fr" action-data="type=followed&amp;refer_lflag=1001030201_" wforce="0" uid="1760668437" action-type="follow" suda-data="key=tblog_search_user&amp;value=user_feed_1_follow"><em title="关注" class="W_ficon ficon_add S_ficon">+</em>关注</a>
+                                                        <a href="javascript:void(0);" class="W_btn_b6 W_fr" action-data="type=followed&amp;refer_lflag=1001030201_" wforce="0" uid="1760668437" action-type="follow" suda-data="key=tblog_search_user&amp;value=user_feed_1_follow"><em title="关注" class="W_ficon ficon_add S_ficon">+</em>关注
+                                                        </a>
                                                     </div>
                                                     <div class="person_detail">
                                                         <p class="person_name">
@@ -262,7 +272,9 @@
                                                             <a class="W_linkb" target="_blank" href="http://weibo.com/dlpolice?refer_flag=1001030201_" suda-data="key=tblog_search_user&amp;value=user_feed_1_url">http://weibo.com/dlpolice</a>
                                                         </p>
                                                         <p class="person_card">
-                                                            <em class="red">大连</em>市公安局官方微博
+                                                            <em class="red">大连
+                                                            </em>
+                                                            市公安局官方微博
                                                         </p>
                                                         <p class="person_num">
                                                             <span>关注<a class="W_linkb" href="http://weibo.com/1760668437/follow?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_1_num">1665</a></span>
@@ -274,548 +286,115 @@
                                                             <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_1_label">大连市公安局</a>
                                                         </p>
                                                         <p class="person_label">职业信息：
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;work=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_company" suda-data="key=tblog_search_user&amp;value=user_feed_1_job">大连市公安局</a>
+                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;work=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_company" suda-data="key=tblog_search_user&amp;value=user_feed_1_job">大连市公安局
+                                                            </a>
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div class="list_person clearfix">
-                                                    <div class="person_pic"><a target="_blank" href="http://weibo.com/dlpolicedog?refer_flag=1001030201_" title="大连刑侦警犬管理大队" suda-data="key=tblog_search_user&amp;value=user_feed_2_icon"><img class="W_face_radius" src="weibo_files/7da187d8jw1e8qgp5bmzyj2050050aa8.jpg" usercard="id=2107738072&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="2107738072" height="80" width="80"></a></div>
-                                                    <div class="person_adbtn">
-                                                        <a href="javascript:void(0);" class="W_btn_b6 W_fr" action-data="type=followed&amp;refer_lflag=1001030201_" wforce="0" uid="2107738072" action-type="follow" suda-data="key=tblog_search_user&amp;value=user_feed_2_follow"><em title="关注" class="W_ficon ficon_add S_ficon">+</em>关注</a>
-                                                    </div>
-                                                    <div class="person_detail">
-                                                        <p class="person_name">
-                                                            <a class="W_texta W_fb" target="_blank" href="http://weibo.com/dlpolicedog?refer_flag=1001030201_" title="大连刑侦警犬管理大队" usercard="id=2107738072&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="2107738072" suda-data="key=tblog_search_user&amp;value=user_feed_2_name">
-                                                                                                              <em class="red" usercard="id=2107738072">大连</em>刑侦警犬管理大队
-                                                                                                                
-                                                                                                              </a>
-                                                            <a target="_blank" href="http://verified.weibo.com/verify" title="微博机构认证" alt="微博机构认证" class="W_icon icon_approve_co"></a>
-                                                        </p>
-                                                        <p class="person_addr">
-                                                            <span class="male m_icon" title="男"></span>
-                                                            <span>辽宁，大连</span>
-                                                            <a class="W_linkb" target="_blank" href="http://weibo.com/dlpolicedog?refer_flag=1001030201_" suda-data="key=tblog_search_user&amp;value=user_feed_2_url">http://weibo.com/dlpolicedog</a>
-                                                        </p>
-                                                        <p class="person_card">
-                                                            <em class="red">大连</em>市公安局刑侦支队警犬管理大队
-                                                        </p>
-                                                        <p class="person_num">
-                                                            <span>关注<a class="W_linkb" href="http://weibo.com/2107738072/follow?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_2_num">924</a></span>
-                                                            <span>粉丝<a class="W_linkb" href="http://weibo.com/2107738072/fans?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_2_num">4万</a></span>
-                                                            <span>微博<a class="W_linkb" href="http://weibo.com/2107738072/profile?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_2_num">4424</a></span></p>
-                                                        <div class="person_info">
-                                                            <p>简介： 希望通过本微博可以解除一些人对警犬的误解，让更多的人了解警犬和警犬训导员的工作。
-                                                            </p>
-                                                        </div>
-                                                        <p class="person_label">标签：
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%2588%2591%25E8%25AD%25A6&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_2_label">
-                                                                                                            刑警
-                                                                                                                </a>
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E8%25AD%25A6%25E5%25AF%259F&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_2_label">
-                                                                                                            警察
-                                                                                                                </a>
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E8%25AD%25A6%25E7%258A%25AC&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_2_label">
-                                                                                                            警犬
-                                                                                                                </a>
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_2_label">大连</a>
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E8%25AD%25A6%25E7%258A%25AC%25E8%25AE%25AD%25E5%25AF%25BC%25E5%2591%2598&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_2_label">
-                                                                                                              警犬训导员
-                                                                                                                  </a>
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25B8%25A6%25E7%258A%25AC%25E6%25B0%2591%25E8%25AD%25A6&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_2_label">
-                                                                                                              带犬民警
-                                                                                                                  </a>
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%2585%25AC%25E5%25AE%2589&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_2_label">
-                                                                                                          公安
-                                                                                                              </a>
-                                                        </p>
-                                                        <p class="person_label">教育信息：
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E4%25B8%25AD%25E5%259B%25BD%25E5%2588%2591%25E4%25BA%258B%25E8%25AD%25A6%25E5%25AF%259F%25E5%25AD%25A6%25E9%2599%25A2&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_2_edu">
-                                                                                                          中国刑事警察学院
-                                                                                                          </a>
-                                                        </p>
-                                                        <p class="person_label">职业信息：
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;work=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580%25E5%2588%2591%25E4%25BA%258B%25E7%258A%25AF%25E7%25BD%25AA%25E6%25A1%2588%25E4%25BB%25B6%25E4%25BE%25A6%25E6%259F%25A5%25E6%2594%25AF%25E9%2598%259F%25E8%25AD%25A6%25E7%258A%25AC%25E7%25AE%25A1%25E7%2590%2586%25E5%25A4%25A7%25E9%2598%259F&amp;Refer=SUer_company" suda-data="key=tblog_search_user&amp;value=user_feed_2_job">大连市公安局刑事犯罪案件侦查支队警犬管理大队
-                                                                                                          </a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                    <div class="list_person clearfix">
-                        <div class="person_pic"><a target="_blank" href="http://weibo.com/dalianxiaoyuan?refer_flag=1001030201_" title="大连校园" suda-data="key=tblog_search_user&amp;value=user_feed_3_icon"><img class="W_face_radius" src="weibo_files/7767f635ly8fdx1ad6anfj20yi0yidke.jpg" usercard="id=2003301941&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="2003301941" height="80" width="80"></a></div>
-                        <div class="person_adbtn">
-                            <a href="javascript:void(0);" class="W_btn_b6 W_fr" action-data="type=followed&amp;refer_lflag=1001030201_" wforce="0" uid="2003301941" action-type="follow" suda-data="key=tblog_search_user&amp;value=user_feed_3_follow"><em title="关注" class="W_ficon ficon_add S_ficon">+</em>关注</a>
-                        </div>
-                        <div class="person_detail">
-                            <p class="person_name">
-                                <a class="W_texta W_fb" target="_blank" href="http://weibo.com/dalianxiaoyuan?refer_flag=1001030201_" title="大连校园" usercard="id=2003301941&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="2003301941" suda-data="key=tblog_search_user&amp;value=user_feed_3_name">
-                                <em class="red" usercard="id=1760668437">大连</em>校园
-                                <a target="_blank" href="http://verified.weibo.com/verify" title="微博机构认证" alt="微博机构认证" class="W_icon icon_approve_co"></a>
-                            </p>
-                            <p class="person_addr">
-                                <span class="female m_icon" title="女"></span>
-                                <span>辽宁，大连</span>
-                                <a class="W_linkb" target="_blank" href="http://weibo.com/dalianxiaoyuan?refer_flag=1001030201_" suda-data="key=tblog_search_user&amp;value=user_feed_3_url">http://weibo.com/dalianxiaoyuan</a>
-                            </p>
-                            <p class="person_card">
-                                新浪微博<em class="red">大连</em>校园活动专用账号
-                            </p>
-                            <p class="person_num">
-                                <span>关注<a class="W_linkb" href="http://weibo.com/2003301941/follow?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_3_num">1513</a></span>
-                                <span>粉丝<a class="W_linkb" href="http://weibo.com/2003301941/fans?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_3_num">16万</a></span>
-                                <span>微博<a class="W_linkb" href="http://weibo.com/2003301941/profile?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_3_num">8498</a></span></p>
-                            <div class="person_info">
-                                <p>简介： 微博校园
-                                    <em class="red">大连</em>活动平台，专注大连本地校园资讯，欢迎私信投稿。
-                                </p>
-                            </div>
-                            <p class="person_label">标签：
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_3_label">
-                                                                      大连
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A7%25E5%25AD%25A6%25E7%2594%259F&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_3_label">
-                                                                      大学生
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E7%2590%2586%25E5%25B7%25A5%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_3_label">
-                                                                      大连理工大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E6%25B5%25B7%25E4%25BA%258B%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_3_label">
-                                                                      大连海事大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E4%25B8%259C%25E5%258C%2597%25E8%25B4%25A2%25E7%25BB%258F%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_3_label">
-                                                                      东北财经大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E6%25B5%25B7%25E6%25B4%258B%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_3_label">
-                                                                      大连海洋大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_3_label">
-                                                                      大连市
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E8%25BE%25BD%25E5%25AE%2581%25E5%25B8%2588%25E8%258C%2583%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_3_label">
-                                                                      辽宁师范大学
-                                                                          </a>
-                            </p>
-                            <p class="person_label">教育信息：
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_3_edu">
-                                                                      大连大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E5%25A4%25A7%25E8%25BF%259E%25E7%2590%2586%25E5%25B7%25A5%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_3_edu">
-                                                                      大连理工大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E5%25A4%25A7%25E8%25BF%259E%25E4%25BA%25A4%25E9%2580%259A%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_3_edu">
-                                                                      大连交通大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25A4%2596%25E5%259B%25BD%25E8%25AF%25AD%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_3_edu">
-                                                                      大连外国语大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E4%25B8%259C%25E5%258C%2597%25E8%25B4%25A2%25E7%25BB%258F%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_3_edu">
-                                                                      东北财经大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_3_edu">
-                                                                      大连大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E5%25A4%25A7%25E8%25BF%259E%25E6%25B5%25B7%25E4%25BA%258B%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_3_edu">
-                                                                      大连海事大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E5%25A4%25A7%25E8%25BF%259E%25E4%25B8%259C%25E8%25BD%25AF%25E4%25BF%25A1%25E6%2581%25AF%25E5%25AD%25A6%25E9%2599%25A2&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_3_edu">
-                                                                      大连东软信息学院
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E5%25A4%25A7%25E8%25BF%259E%25E6%25B0%2591%25E6%2597%258F%25E5%25AD%25A6%25E9%2599%25A2&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_3_edu">
-                                                                      大连民族学院
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B7%25A5%25E4%25B8%259A%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_3_edu">
-                                                                      大连工业大学
-                                                                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E5%25A4%25A7%25E8%25BF%259E%25E5%258C%25BB%25E7%25A7%2591%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_3_edu">
-                                                                      大连医科大学
-                                                                          </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="list_person clearfix">
-                        <div class="person_pic"><a target="_blank" href="http://weibo.com/u/2520487393?refer_flag=1001030201_" title="大连气象" suda-data="key=tblog_search_user&amp;value=user_feed_other_icon"><img class="W_face_radius" src="weibo_files/963b95e1jw1e8qgp5bmzyj2050050aa8.jpg" usercard="id=2520487393&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="2520487393" height="80" width="80"></a></div>
-                        <div class="person_adbtn">
-                            <a href="javascript:void(0);" class="W_btn_b6 W_fr" action-data="type=followed&amp;refer_lflag=1001030201_" wforce="0" uid="2520487393" action-type="follow" suda-data="key=tblog_search_user&amp;value=user_feed_other_follow"><em title="关注" class="W_ficon ficon_add S_ficon">+</em>关注</a>
-                        </div>
-                        <div class="person_detail">
-                            <p class="person_name">
-                                <a class="W_texta W_fb" target="_blank" href="http://weibo.com/u/2520487393?refer_flag=1001030201_" title="大连气象" usercard="id=2520487393&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="2520487393" suda-data="key=tblog_search_user&amp;value=user_feed_other_name">
-                                                                      <em class="red" usercard="id=2520487393">大连</em>气象
-                                                                        
-                                                                      </a>
-                                <a target="_blank" href="http://verified.weibo.com/verify" title="微博机构认证" alt="微博机构认证" class="W_icon icon_approve_co"></a>
-                            </p>
-                            <p class="person_addr">
-                                <span class="male m_icon" title="男"></span>
-                                <span>辽宁，大连</span>
-                                <a class="W_linkb" target="_blank" href="http://weibo.com/u/2520487393?refer_flag=1001030201_" suda-data="key=tblog_search_user&amp;value=user_feed_other_url">http://weibo.com/u/2520487393</a>
-                            </p>
-                            <p class="person_card">
-                                <em class="red">大连</em>市气象局官方微博
-                            </p>
-                            <p class="person_num">
-                                <span>关注<a class="W_linkb" href="http://weibo.com/2520487393/follow?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_other_num">96</a></span>
-                                <span>粉丝<a class="W_linkb" href="http://weibo.com/2520487393/fans?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_other_num">38万</a></span>
-                                <span>微博<a class="W_linkb" href="http://weibo.com/2520487393/profile?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_other_num">11902</a></span></p>
-                            <div class="person_info">
-                                <p>简介：
-                                    <em class="red">大连</em>市气象局官方微博
-                                </p>
-                            </div>
-                            <p class="person_label">标签：
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E6%25B0%2594%25E8%25B1%25A1%25E6%259C%258D%25E5%258A%25A1&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-                      气象服务
-                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A9%25E6%25B0%2594%25E5%25AE%259E%25E5%2586%25B5&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-                      天气实况
-                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E6%25B0%2594%25E8%25B1%25A1%25E7%2581%25BE%25E5%25AE%25B3%25E9%25A2%2584%25E8%25AD%25A6&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-                      气象灾害预警
-                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A9%25E6%25B0%2594%25E9%25A2%2584%25E6%258A%25A5&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-                      天气预报
-                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E7%2594%259F%25E6%25B4%25BB%25E6%258F%2590%25E9%2586%2592&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-                      生活提醒
-                          </a>
-                                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E6%2597%2585%25E6%25B8%25B8%25E5%25A4%25A9%25E6%25B0%2594&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-                      旅游天气
-                          </a>
-                            </p>
-                        </div>
-                    </div>
-                                               
-    <div class="list_person clearfix">
-        <div class="person_pic"><a target="_blank" href="http://weibo.com/dutma?refer_flag=1001030201_" title="大连理工大学微博协会" suda-data="key=tblog_search_user&amp;value=user_feed_other_icon"><img class="W_face_radius" src="weibo_files/858a6d35jw8faq3vu9hl2j20ro0rojsx.jpg" usercard="id=2240441653&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="2240441653" height="80" width="80"></a></div>
-        <div class="person_adbtn">
-            <a href="javascript:void(0);" class="W_btn_b6 W_fr" action-data="type=followed&amp;refer_lflag=1001030201_" wforce="0" uid="2240441653" action-type="follow" suda-data="key=tblog_search_user&amp;value=user_feed_other_follow"><em title="关注" class="W_ficon ficon_add S_ficon">+</em>关注</a>
-        </div>
-        <div class="person_detail">
-            <p class="person_name">
-                <a class="W_texta W_fb" target="_blank" href="http://weibo.com/dutma?refer_flag=1001030201_" title="大连理工大学微博协会" usercard="id=2240441653&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="2240441653" suda-data="key=tblog_search_user&amp;value=user_feed_other_name">
-      <em class="red" usercard="id=2240441653">大连</em>理工大学微博协会
-        
-      </a>
-                <a target="_blank" href="http://verified.weibo.com/verify" title="微博机构认证" alt="微博机构认证" class="W_icon icon_approve_co"></a>
-            </p>
-            <p class="person_addr">
-                <span class="male m_icon" title="男"></span>
-                <span>辽宁，大连</span>
-                <a class="W_linkb" target="_blank" href="http://weibo.com/dutma?refer_flag=1001030201_" suda-data="key=tblog_search_user&amp;value=user_feed_other_url">http://weibo.com/dutma</a>
-            </p>
-            <p class="person_card">
-                <em class="red">大连</em>理工大学微博协会官方微博
-            </p>
-            <p class="person_num">
-                <span>关注<a class="W_linkb" href="http://weibo.com/2240441653/follow?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_other_num">512</a></span>
-                <span>粉丝<a class="W_linkb" href="http://weibo.com/2240441653/fans?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_other_num">1万</a></span>
-                <span>微博<a class="W_linkb" href="http://weibo.com/2240441653/profile?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_other_num">11183</a></span></p>
-            <div class="person_info">
-                <p>简介：
-                    <em class="red">大连</em>理工大学新浪微博协会成立于2013年4月，是全新的新媒体社团，平时主要负责校内微博大屏幕的申请与服务，校内大型活动的微博直播，新浪微博认证工作等。
-                </p>
-            </div>
-            <p class="person_label">标签：
-                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=duter&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-      duter
-          </a>
-                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=DUT&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-      DUT
-          </a>
-                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%2587%258C%25E5%25B7%25A5%25E8%25B7%25AF2%25E5%258F%25B7&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-      凌工路2号
-          </a>
-                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E7%25A4%25BE%25E5%259B%25A2&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-      社团
-          </a>
-                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25BE%25AE%25E5%258D%259A%25E5%258D%258F%25E4%25BC%259A&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-      微博协会
-          </a>
-                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E6%25A0%25A1%25E5%259B%25AD&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-      校园
-          </a>
-                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E6%2597%25B6%25E5%25B0%259A&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-      时尚
-          </a>
-                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E7%25BE%258E%25E9%25A3%259F&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-      美食
-          </a>
-                <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E6%2597%2585%25E6%25B8%25B8&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_other_label">
-      旅游
-          </a>
-            </p>
-            <p class="person_label">教育信息：
-                <a class="W_linkb" href="http://s.weibo.com/user/&amp;school=%25E5%25A4%25A7%25E8%25BF%259E%25E7%2590%2586%25E5%25B7%25A5%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_school" suda-data="key=tblog_search_user&amp;value=user_feed_other_edu">
-      大连理工大学
-          </a>
-            </p>
-            <p class="person_label">职业信息：
-                <a class="W_linkb" href="http://s.weibo.com/user/&amp;work=%25E5%25A4%25A7%25E8%25BF%259E%25E7%2590%2586%25E5%25B7%25A5%25E5%25A4%25A7%25E5%25AD%25A6&amp;Refer=SUer_company" suda-data="key=tblog_search_user&amp;value=user_feed_other_job">
-      大连理工大学
-          </a>
-            </p>
-        </div>
-    </div>                                   
-                                                    
-                                                </div>
-                                            </div>
+                                           </div>
                                         </div>
                                     </div>
-                            </div>
-     </div>
-     </div>
-    </div>
-    </div>
-      </div>
-     </div>
-    </div>
-
-    <div class="search_footer W_textb ">
-      <div class="global_footer ">
-     <div class="other_link clearfix ">
-      <div class="help_link ">
-       <p>
-       <a class="ico_service " href="http://ir.weibo.com/?bottomnav=1&amp;wvr=5 " target="_blank ">关于微博</a>
-       <a href="http://help.weibo.com/?refer=didao&amp;bottomnav=1&amp;wvr=5 " target="_blank ">微博帮助</a>
-       <a href="http://help.weibo.com/newtopic/suggest?bottomnav=1&amp;wvr=5 " target="_blank ">意见反馈</a>
-       <a href="http://open.weibo.com/?bottomnav=1&amp;wvr=5 " target="_blank ">开放平台</a>
-       <a href="http://hr.weibo.com/?bottomnav=1&amp;wvr=5 " target="_blank ">微博招聘</a>
-       <a href="http://news.sina.com.cn/guide/?bottomnav=1&amp;wvr=5 " target="_blank ">新浪网导航</a>
-       <a href="http://service.account.weibo.com/?bottomnav=1&amp;wvr=5 " target="_blank ">社区管理中心</a>
-       <a href="http://service.account.weibo.com/roles/gongyue?bottomnav=1&amp;wvr=5 " target="_blank ">微博社区公约</a>
-       </p>
-       <p class="company "><span class="copy S_txt2 ">Copyright © 2009-2017 WEIBO 北京微梦创科网络技术有限公司</span>
-       <span>
-       <a href="http://weibo.com/aj/static/jww.html " target="_blank " class="S_txt2 ">京网文[2011]0398-130号</a><a href="http://www.miibeian.gov.cn/ " target="_blank " class="S_txt2 ">京ICP备12002058号</a>
-      <select id="pl_common_changeLanguage ">
-       <option value="zh-cn " selected="selected ">中文(简体)</option>
-       <option value="zh-tw ">中文(繁体)</option>
-       </select>   </span></p>
-      </div>
-     </div>
-      </div>
-     </div>
-      <div class="S_gotop " id="base_scrollToTop " style=" ">
-      <a suda-data="key=tblog_search_weibo&amp;value=weibo_up " node-type="scrollToTop " class="W_gotop S_ficon_bg " href="javascript:void(0); " style="display: none; "><em class="W_ficon ficon_backtop S_bg2_c ">Ú</em></a> </div>
-      <div style="display:none; " id="pl_common_base "></div>
-    </div>
-
-    <script src="weibo_files/topInit.js "></script>
-
-    <script src="weibo_files/base.js " type="text/javascript "></script>
-     
-    <!-- SUDA_CODE_START -->
-    <noscript><img width="0 " height="0 " src="http://beacon.sina.com.cn/a.gif?noScript " border="0 " alt=" " /></noscript>
-    <!-- SUDA_CODE_END -->
-
-    <div i-am-music-player="" node-type="box">
-    <div class="PCD_mplayer_layer" style="position:fixed;bottom:90px;;left:30px;display:none;" node-type="confirm">
-        <div class="content">
-            <p class="main_txt"><span class="txt">确认要隐藏播放器吗？</span></p>
-            <p class="sub_txt S_txt2">隐藏后点击页面任意播放按钮即可再次出现</p>
-            <div class="btn">
-                <a href="javascript:void(0);" action-type="hide" class="btn_a" suda-data="key=tblog_musicpageplayer&amp;value=click_close">确认</a>
-                <a href="javascript:void(0);" action-type="hide_confirm" class="btn_b">取消</a>
-            </div>
-            <div class="layer_arrow"><span class="arrow_bor arrow_bor_b"><i class="arrow_a"></i><em class="arrow_b"></em></span></div>
-        </div>
-    </div>
-    <div class="PCD_mplayer clearfix" node-type="mini" style="-webkit-transition:left .3s ease;-moz-transition:left .3s ease;-o-transition:left .3s ease;-ms-transition:left .3s ease;transition:left .3s ease;position:fixed;bottom:33px;left:0;z-index:9999;">
-        <div class="mini clearfix">
-            <div class="mini_panel_area">
-                <a href="javascript:void(0)" class="mini_btn_area pause_state" node-type="mini_toggle_play" action-type="toggle_play">
-                    <i class="ico_ctrl ico_mini_state"></i>
-                    <span class="mask"></span>
-                    <img node-type="mini_photo" src="weibo_files/default_cover.jpg" class="pic">
-                </a>
-        </div>
-        <a href="javascript:void(0)" class="mini_fold_ctrl_area" action-type="toggle_fold">
-            <i class="ico_ctrl ico_unfold"></i>
-        </a>
-        <a href="javascript:void(0);" action-type="show_confirm" class="ico_ctrl ico_close" title="关闭"></a>
-    </div>
-</div>
-<div class="PCD_mplayer PCD_mplayer_v2 clearfix" node-type="player" style="-webkit-transition:left .5s ease;-moz-transition:left .5s ease;-o-transition:left .5s ease;-ms-transition:left .5s ease;transition:left .5s ease;position:fixed;bottom:20px;left:-690px;z-index:9999;">
-    <div class="player_bg" node-type="">
-        <div class="panel_area" node-type="list" style="display:none;">
-            <div class="title_box">
-                <div class="opt_btn">
-                    <a action-type="toggle_list" href="javascript:void(0);" class="ico_ctrl ico_close" title="关闭"></a>
-                </div>
-                <ul class="ul_title" node-type="songTitles"></ul>
-                <div class="opt_box">
-                    <div class="search_box">
-                        <input node-type="searchinput" class="ipt_txt" placeholder="搜索歌曲/歌手" type="text">
-                        <a href="javascript:void(0)" action-type="list_searchBtn" class="search_btn"><i class="ico_mplayer ico_search"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="list_area">
-                <div node-type="songlists" style="height:250px;width:685px;position:relative;left:0px;-webkit-transition:left .3s ease;-webkit-transition:left .3s ease;-moz-transition:left .3s ease;-o-transition:left .3s ease;transition:left .3s ease;">
-                    <div node-type="list_search_box" style="height:100%;width:685px;float:left;overflow:hidden;position:relative;">
-                        <p class="p_item" node-type="list_search_bar"></p>
-                        <div style="overflow:hidden;width:100%;height:100%;position:relative;_background:url(about:blank);">
-                            <div style="position: relative; height: 100%; width: 100px; overflow-y: scroll; overflow-x: hidden; margin-right: -30px; padding-right: 30px;">
-                                <div class="list_wrap" style="width:685px;height:auto;">
-                                    <div class="list_box">
-                                        <ul class="ul_list" node-type="list_search_area"></ul>
-                                    </div>
-                                    <div class="empty_box" node-type="list_search_area_loading" style="display:none">
-                                        <div style="height:30px;"></div>
-                                        <p class="text" node-type="list_search_area_empty_text">努力搜索中, 请稍后...</p>
-                                    </div>
-                                    <div class="empty_box" node-type="list_search_area_empty" style="display:none">
-                                        <i class="ico_ctrl ico_list_warn"></i>
-                                        <p class="text" node-type="list_search_area_empty_text">对不起，没有找到相应结果。</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="scroll_box" style="bottom: 10px; visibility: hidden;">
-                            <div class="scroll_bar" style="top:0%; height:0;"></div>
-                        </div>
-                    </div>
+                    </div>   
+                  </div>
                 </div>
-            </div>
         </div>
-        <div class="unfold_area">
-            <div class="unfold_bg">
-                <div class="time_wrap">
-                    <div class="time_bar" node-type="progress_range_out">
-                        <div class="cur_time_bg" style="width: 0%;" node-type="progress_range">
-                            <a class="cur_time" href="javascript:void(0);" title="进度"></a>
-                        </div>
-                    </div>
-                    <div class="time_count tcol_sub" node-type="time"><em>00</em>:<em>00</em></div>
-                    <div class="layer_time" style="top:-20px; left:200px;z-index:1;pointer-events:none;display:none;" node-type="time_tip">
-                        <div class="content">
-                            <i class="ico_ctrl ico_time_arrow"></i>
-                            <span node-type="time_tip_text">00:00</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="main_panel clearfix">
-                    <div node-type="info" class="music_info">
-                        <!--temp start-->
-                        <div class="music_pic"><a target="_blank" href="http://ting.weibo.com/?from=page_101515_player" title="微音乐" class="pic"><img src="weibo_files/default_cover.jpg"></a></div>
-                        <div class="music_detail">
-                            <p class="name_bar"> <a target="_blank" class="name autocut" href="http://ting.weibo.com/?from=page_101515_player" title="微音乐">微音乐</a> </p>
-                            <p class="author_bar autocut"> <a target="_blank" class="author tcol_sub" href="http://ting.weibo.com/?from=page_101515_player" title="微音乐">微音乐</a> </p>
-                        </div>
-                        <!--temp end-->
-                    </div>
-                    <div class="contrl_panel">
-                        <p class="layer_loop" style="display:none;" node-type="play_type_select">
-                            <a href="javascript:void(0);" title="随机播放" class="ico_ctrl ico_rand" node-type="play_type_select_rand" action-type="play_type_select"></a>
-                            <a href="javascript:void(0);" title="单曲循环" class="ico_ctrl ico_solo" node-type="play_type_select_solo" action-type="play_type_select"></a>
-                            <a href="javascript:void(0);" title="列表循环" class="ico_ctrl ico_loop" node-type="play_type_select_loop" action-type="play_type_select"></a>
-                        </p>
-                        <div class="contrl_bar clearfix">
-                            <div class="base_ctrl">
-                                <a href="javascript:void(0);" class="ico_ctrl ico_prev" action-type="prev" title="上一首"></a>
-                                <a href="javascript:void(0);" class="ico_ctrl ico_play" node-type="toggle_play" action-type="toggle_play" title="播放/暂停"></a>
-                                <a href="javascript:void(0);" class="ico_ctrl ico_next" action-type="next" title="下一首"></a>
-                                <a href="javascript:void(0);" class="ico_ctrl ico_loop" node-type="play_type" action-type="play_type" title="列表循环"></a>
-                            </div>
-                            <div class="vol_ctrl">
-                                <a href="javascript:void(0);" class="ico_ctrl ico_vol" title="音量" action-type="toggle_mute" node-type="toggle_mute"></a>
-                                <div class="ctrl_bar" node-type="volume_range_out">
-                                    <div class="cur_vol cur_volmute" style="width: 90%;" node-type="volume_range">
-                                        <a href="javascript:void(0);" class="ico_ctrl ico_curvol" title="音量调节"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="opt_ctrl clearfix">
-                                <a href="javascript:void(0);" class="ico_ctrl ico_like" action-type="like" node-type="like"></a>
-                                <a href="javascript:void(0);" class="ico_ctrl ico_share" action-type="share" title="分享"></a>
-                                <a href="javascript:void(0);" class="ico_ctrl ico_list" node-type="toggle_list" title="展开列表" action-type="toggle_list"></a>
-                                <a href="javascript:void(0);" class="ico_lyric ico_lyric_open" node-type="toggle_lrc" action-type="toggle_lrc" title="显示歌词">词</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fold_ctrl_area" title="展开" action-type="toggle_fold" node-type="toggle_fold">
-            <div class="mask"><a href="javascript:void(0);" class="ico_ctrl ico_unfold ico_fold"></a></div>
-        </div>
-        <div class="lyric_wrap" node-type="lrc" style="display:none">
-            <div class="lyric_bg">
-                <a href="javascript:void(0);" class="ico_ctrl ico_close" title="关闭" action-type="toggle_lrc"></a>
-                <div class="content" style="cursor: pointer;">
-                    <div class="tcol_sub" node-type="lrc_content" style="margin-top: 15px;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+      </div>
+   
+  </div>
 </div>
-</div>
+<script type="text/javascript">
+      function show(){
+        alert(1);
+      }
+      // show();
+    </script>
 
 <script type="text/javascript" charset="gb2312">
-  
-
-
-  
-
-  
-
-  //分页
-  // $(".pagination").pagination(500, {
-  //   current_page :0, //当前页码
-  //   items_per_page :9,
-  //   display_msg :true,
-  //   callback :pageselectCallback
-  // });
-  // function pageselectCallback(page_id, jq) {
-  //   alert("当前页id(由0开始)：" + page_id + "，\n每页显示：" + this.items_per_page + "条数据");
-  // }
-
   function showhh()
   {
-      //alert(11111111)
-      // var thisURL = document.URL;
-      //thisURL=encodeURI(thisURL)
-      //alert(encodeURI(encodeURI(thisURL)))
-      // alert(thisURL)
+      //  var thisURL = document.URL;
+      // //thisURL=encodeURI(thisURL)
+      // //alert(encodeURI(encodeURI(thisURL)))
+      // // alert(thisURL)
       // var  getval =thisURL.split('?')[1];
-      // alert(getval)
-      // var  a= getval.split("=")[1];
-      // alert(decodeURI(a))
-        
-        var p=0;
-        $('#user_list').empty()
-        var html="";
+      // // alert(getval)
+      // var  a= getval.split("=")[1];6 
+      // // var p=0;
 
-        html+="<div class='list_person clearfix'>";
-        html+="<div class='person_pic'>";
-        html+="<a target='\"_blank\" href=\"ttp://weibo.com/dlpolice?refer_flag=1001030201_\" title=\"大连公安\" suda-data=\"key=tblog_search_user&&amp;value=user_feed_1_icon\">";
-        html += "<img class=\"W_face_radius\" src=\"weibo_files\/68f1ab15jw1e8qgp5bmzyj2050050aa8.jpg\" usercard=\"id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_\" uid=\"1760668437\" height=\"80\" width=\"80\">"+"</a>";
-        html+="</div>";
+      $('#user_list').empty();
+        // $.post("/query_solr/",{'content':decodeURI(a)}, function(data,status){
+          // if (status == 'success'){
+            // var json=eval(data);
 
-        html += "<div class=\"person_adbtn\">";
-        html += "<a href=\"javascript:void(0);\" class=\"W_btn_b6 W_fr\" action-data=\"type=followed&amp;refer_lflag=1001030201_\" wforce=\"0\" uid=\"1760668437\" action-type=\"follow\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_follow\">"
+            // for (var i = 0; i < 10; i++){
+            // // alert(1);
+              var html="";
+             
+
+              html+="<div class='list_person clearfix'>";
+              html+="<div class='person_pic'>";
+              html+="<a target='\"_blank\" href=\"http:\/\/weibo.com/dlpolice?refer_flag=1001030201_\" title=\"大连公安\" suda-data=\"key=tblog_search_user&&amp;value=user_feed_1_icon\">";
+              html += "<img class=\"W_face_radius\" src=\"weibo_files\/68f1ab15jw1e8qgp5bmzyj2050050aa8.jpg\" usercard=\"id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_\" uid=\"1760668437\" height=\"80\" width=\"80\">"+"<\/a>";
+              html+="<\/div>";
+              html += "<p>hello</p>";
+              html += "<div class=\"person_adbtn\">";
+              html += "<a href=\"javascript:void(0);\" class=\"W_btn_b6 W_fr\" action-data=\"type=followed&amp;refer_lflag=1001030201_\" wforce=\"0\" uid=\"1760668437\" action-type=\"follow\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_follow\">";
+              html += "<em title=\"关注\" class=\"W_ficon ficon_add S_ficon\">+<\/em>关注";
+              html += "</a>";
+              html += "</div>";
+
+              html += "<div class=\"person_detail\">";
+              html += "<p class=\"person_name\">";
+              html += "<a class=\"W_texta W_fb\" target=\"_blank\" href=\"http:\/\/weibo.com/dlpolice?refer_flag=1001030201_\" title=\"大连公安\" usercard=\"id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_\" uid=\"1760668437\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_name\">";
+              html += "<em class=\"red\" usercard=\"id=1760668437\">大连<\/em>公安dsadsa";
+              html += "</a>";
+
+              html += "</p>";
+              html += "<p class=\"person_addr\">";
+              html += "<span class=\"male m_icon\" title=\"" +"男"+"\">"+"</span>";
+              html += "<span>"+"辽宁，大连"+"</span>";
+
+              html += "<a class=\"W_linkb\" target=\"_blank\" href=\"http:\/\/weibo.com\/dlpolice?refer_flag=1001030201_\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_url\">"+"http:\/\/weibo.com\/dlpolice<\/a>";
+              html += "</p>";
+
+              html += "<p class=\"person_card\">";
+              html += "<em class=\"red\">大连<\/em>市公安局官方微博";
+              html += "</p>";
 
 
-        html+="<a target=\"_blank\" class=\"title\"  href=\"process_data.html?haha="+i+"&query="+decodeURI(a)+"\">" + json[i].zuowen_content.substring(0,20)+"..." + "</a>";
-        html+="</div>";
-        html+="<div class='itemBody'>";
+              html += "<p class=\"person_num\">";
+              html += "<span>关注<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/follow?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">1665"+"</a>"+"</span>";
+              html += "<span>粉丝<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/fans?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">62万"+"</a>"+"</span>";
+              html += "<span>微博<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/profile?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">23947" + "</a>"+ "</span>";
+              html += "</p>";
 
-        html+=json[i].zuowen_content.substring(5,x)+"......";
-        html+="</div>";
-        html+="<div class='itemFoot'>";
-        html+="<span class='info'>";
-        html+="<label>文本oid：</label>";
-        html+="<span class='value'>" + json[i].zuowen_oid +"</span>";
-        html+="</span>";
-        html+="</div>";
-        html+="</div>";
-        $('#user_list').append(html);
-        p++;
-        if (p>=100)
-            break;
+              html += "<p class='person_label'>标签：";
+              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E6%2596%25B0%25E9%2597%25BB%25E4%25B8%25AD%25E5%25BF%2583&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\>新闻中心"+"</a>";
+              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E6%2594%25BF%25E6%25B2%25BB%25E9%2583%25A8%25E5%25AE%25A3%25E4%25BC%25A0%25E5%25A4%2584&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\">政治部宣"+"</a>";
+              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\">大连市公安局"+"</a>"+"</p>";
 
+              html += "<p class=\"person_label\">职业信息：";
+              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;work=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_company\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_job\">大连市公安局"+"</a>";
+              html += "</p>";
+              html += "</div>";
+              html += "</div>";
+              
+              $('#user_list').append(html);
+        // alert("hello");
+
+            // }
+          // }
+          // else{
+          //     alert('0 user!');
+          //   }
        
   }
 
 </script>
+
 </body>
 
 </html>

@@ -305,12 +305,15 @@
    
   </div>
 </div>
+<div class="S_gotop" id="base_scrollToTop" style="">
+  <a suda-data="key=tblog_search_weibo&amp;value=weibo_up" node-type="scrollToTop" class="W_gotop S_ficon_bg" href="javascript:void(0);" style=""><em class="W_ficon ficon_backtop S_bg2_c">Ú</em></a> </div>
+  <div style="display:none;" id="pl_common_base"></div>
 <script type="text/javascript">
       function show(){
         alert(1);
       }
       // show();
-    </script>
+</script>
 
 <script type="text/javascript" charset="gb2312">
   function showhh()
@@ -325,71 +328,72 @@
       // // var p=0;
 
       $('#user_list').empty();
-        // $.post("/query_solr/",{'content':decodeURI(a)}, function(data,status){
-          // if (status == 'success'){
-            // var json=eval(data);
+        $.post("/query_solr/",{'content':decodeURI(a)}, function(data,status){
+          if (status == 'success'){
+            var json=eval(data);
 
-            // for (var i = 0; i < 10; i++){
+            for (var i = 0; i < 10; i++){
             // // alert(1);
               var html="";
              
 
-              html+="<div class='list_person clearfix'>";
-              html+="<div class='person_pic'>";
-              html+="<a target='\"_blank\" href=\"http:\/\/weibo.com/dlpolice?refer_flag=1001030201_\" title=\"大连公安\" suda-data=\"key=tblog_search_user&&amp;value=user_feed_1_icon\">";
+              html+="<div class=\"list_person clearfix\">";
+              html+="<div class=\"person_pic\">";
+              html+="<a target=\"_blank\" href=\"http:\/\/weibo.com/dlpolice?refer_flag=1001030201_\" title=\"大连公安\" suda-data=\"key=tblog_search_user&&amp;value=user_feed_1_icon\">";
               html += "<img class=\"W_face_radius\" src=\"weibo_files\/68f1ab15jw1e8qgp5bmzyj2050050aa8.jpg\" usercard=\"id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_\" uid=\"1760668437\" height=\"80\" width=\"80\">"+"<\/a>";
               html+="<\/div>";
-              html += "<p>hello</p>";
+              
               html += "<div class=\"person_adbtn\">";
               html += "<a href=\"javascript:void(0);\" class=\"W_btn_b6 W_fr\" action-data=\"type=followed&amp;refer_lflag=1001030201_\" wforce=\"0\" uid=\"1760668437\" action-type=\"follow\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_follow\">";
               html += "<em title=\"关注\" class=\"W_ficon ficon_add S_ficon\">+<\/em>关注";
-              html += "</a>";
-              html += "</div>";
+              html += "<\/a>";
+              html += "<\/div>";
 
               html += "<div class=\"person_detail\">";
               html += "<p class=\"person_name\">";
               html += "<a class=\"W_texta W_fb\" target=\"_blank\" href=\"http:\/\/weibo.com/dlpolice?refer_flag=1001030201_\" title=\"大连公安\" usercard=\"id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_\" uid=\"1760668437\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_name\">";
               html += "<em class=\"red\" usercard=\"id=1760668437\">大连<\/em>公安dsadsa";
-              html += "</a>";
+              html += "<\/a>";
 
-              html += "</p>";
+              html += "<\/p>";
               html += "<p class=\"person_addr\">";
-              html += "<span class=\"male m_icon\" title=\"" +"男"+"\">"+"</span>";
+              html += "<span class=\"male m_icon\" title=\"男\">"+"</span>";
               html += "<span>"+"辽宁，大连"+"</span>";
 
               html += "<a class=\"W_linkb\" target=\"_blank\" href=\"http:\/\/weibo.com\/dlpolice?refer_flag=1001030201_\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_url\">"+"http:\/\/weibo.com\/dlpolice<\/a>";
-              html += "</p>";
+              html += "<\/p>";
 
               html += "<p class=\"person_card\">";
               html += "<em class=\"red\">大连<\/em>市公安局官方微博";
-              html += "</p>";
+              html += "<\/p>";
 
 
               html += "<p class=\"person_num\">";
-              html += "<span>关注<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/follow?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">1665"+"</a>"+"</span>";
-              html += "<span>粉丝<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/fans?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">62万"+"</a>"+"</span>";
-              html += "<span>微博<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/profile?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">23947" + "</a>"+ "</span>";
-              html += "</p>";
+              html += "<span>关注<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/follow?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">1665"+"<\/a>"+"<\/span>";
+              html += "<span>粉丝<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/fans?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">62万"+"<\/a>"+"<\/span>";
+              html += "<span>微博<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/profile?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">23947" + "<\/a>"+ "<\/span>";
+              html += "<\/p>";
 
-              html += "<p class='person_label'>标签：";
+              html += "<p class=\"person_label\">标签：";
               html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E6%2596%25B0%25E9%2597%25BB%25E4%25B8%25AD%25E5%25BF%2583&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\>新闻中心"+"</a>";
-              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E6%2594%25BF%25E6%25B2%25BB%25E9%2583%25A8%25E5%25AE%25A3%25E4%25BC%25A0%25E5%25A4%2584&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\">政治部宣"+"</a>";
-              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\">大连市公安局"+"</a>"+"</p>";
+              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E6%2594%25BF%25E6%25B2%25BB%25E9%2583%25A8%25E5%25AE%25A3%25E4%25BC%25A0%25E5%25A4%2584&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\">政治部宣传处"+"</a>";
+              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\">大连市公安局局长"+"<\/a>"+"<\/p>";
 
               html += "<p class=\"person_label\">职业信息：";
-              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;work=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_company\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_job\">大连市公安局"+"</a>";
-              html += "</p>";
-              html += "</div>";
-              html += "</div>";
-              
+              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;work=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_company\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_job\">大连市公安局"+"<\/a>";
+              html += "<\/p>";
+              html += "<\/div>";
+              html += "<\/div>";
+
               $('#user_list').append(html);
+              // alert(html)
         // alert("hello");
 
-            // }
-          // }
-          // else{
-          //     alert('0 user!');
-          //   }
+            }
+          }
+          else{
+              alert('0 user!');
+            }
        
   }
 

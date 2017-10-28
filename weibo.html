@@ -5,7 +5,6 @@
 <!--     <script type="text/javascript" async="" src="weibo_files/ga.js"></script>
   <>
  -->
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-Frame-Options" content="DENY ">
     <meta content="IE=8" http-equiv="X-UA-Compatible">
@@ -47,13 +46,11 @@
     <link type="text/css" rel="stylesheet" charset="utf-8" href="weibo_files/feedSDK.css">
     <link type="text/css" rel="stylesheet" charset="utf-8" href="weibo_files/connect_layer.css">
 <!--     <script type="text/javascript" src="weibo_files/ytbxtre-a.js"></script> -->
-
-    <script src="weibo_files/jquery.js">
-    </script>
+   <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">	</script>
+ 	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript">
-    // alert(1);
-    
-    // alert(1);
+  
     $(function(){
         $("#sex").mouseover(function(){
             // alert(1);       
@@ -76,7 +73,7 @@
 
         $("#age").mouseover(function(){
         	$("#ageselect").show();
-        	$("usrsex").hide();
+        	$("#usrsex").hide();
         });
         $("#ageselect").mouseover(function(){
         	$("#ageselect").show();
@@ -92,186 +89,270 @@
     
 </head>
 
-<body class="S_person">
+<body class="S_person" onload="showhh()">
 
 
 
     <div class="S_wrap ">
-    <div class="S_main">
-      <div class="S_main_bg">
-        <div class="search_head clearfix" id="pl_common_searchTop">
-            <div class="search_head_formbox">
-                <div class="search_logo">
-                  <a suda-data="key=tblog_search_user&amp;value=user_logo" href="http://s.weibo.com/?Refer=STopic_icon" class="logo_img"></a>
-                </div>
-                <ul class="formbox_tab clearfix formbox_tab2" node-type="searchItems">
-                </ul>
-                <div class="search_input clearfix">
-                    <div class="search_input_wrap">
-                        <div class="searchBtn_box"><a href="http://s.weibo.com/user/%25E5%25A4%25A7%25E8%25BF%259E" class="searchBtn" node-type="submit" suda-data="key=tblog_search_user&amp;value=user_search">搜索</a></div>
-                        <div class="searchInp_box">
-                            <div class="searchInp_auto">
-                                <input class="searchInp_form" value="大连" node-type="text" maxlength="40" autocomplete="off" type="text">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="search_head_action">
-                <p class="action_txt">
-                    <a href="javascript:void(0);" class="adv_settiong" node-type="advsearchUser" suda-data="key=tblog_search_user&amp;value=user_profes">高级搜索</a>
-                    <a href="http://s.weibo.com/preferences" class="setting" target="_blank" suda-data="key=tblog_search_user&amp;value=user_set">设置</a>
-                    <a href="http://help.weibo.com/newtopic/search" target="_blank" suda-data="key=tblog_search_user&amp;value=user_help" class="adv_settiong">帮助</a>
-                </p>
-            </div>
-        </div>
-        <div class="S_plwrap">
-            <div class="S_plc" id="plc_main">
-                <div class="S_content clearfix">
-                    <div class="S_content_l">
-                        
+    	
+	    <div class="S_main">
+	      <div class="S_main_bg">
+	        <div class="search_head clearfix" id="pl_common_searchTop">
+	            <div class="search_head_formbox">
+	                <div class="search_logo">
+	                  <a suda-data="key=tblog_search_user&amp;value=user_logo" href="http://s.weibo.com/?Refer=STopic_icon" class="logo_img"></a>
+	                </div>
+	                <ul class="formbox_tab clearfix formbox_tab2" node-type="searchItems">
+	                </ul>
+	                <div class="search_input clearfix">
+	                    <div class="search_input_wrap">
+	                    	<!-- <button type="button" class="btn btn-primary">原始按钮</button> -->
+	                        <!-- <div class="searchBtn_box"><a href="http://s.weibo.com/user/%25E5%25A4%25A7%25E8%25BF%259E" class="searchBtn" node-type="submit" suda-data="key=tblog_search_user&amp;value=user_search">搜索</a></div> -->
+	                        <div class="searchInp_box">
+	                            <div class="searchInp_auto">
+	                                <input class="searchInp_form" value="大连" node-type="text" maxlength="40" autocomplete="off" type="text">
+	                            </div>
+	                        </div>
 
-                        <div id="pl_user_filtertab">
-                            <div class="WB_cardwrap S_bg2">
-                                <div class="search_tab clearfix" node-type="filtertab">
-                                    <div class="basic_search clearfix">
-                                        <div class="tab_l">
-                                            <ul class="tab_list">
-                                                
-                                                <li >  
-                                                    <a class="W_moredownb" node-type="showSortLayer ">
-                                                      <span>所有用户</span>
-                                                      <span class="more"></span>
-                                                    </a>
+	                    </div>
+	                     <button type="button" class="btn btn-primary" style="float: right;position: relative; top: -37px">搜索</button>
+	                </div>
+	                
+	            </div>
+	            <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal" style="position: relative; top:50%;left: 1%" >
+					高级搜索
+				</button>
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title" id="myModalLabel">
+									高级搜索
+								</h4>
+							</div>
+							<div class="modal-body">
 
-                                                </li>
-                                                <li>
-                                                  <em class="W_vline">|</em>
-                                                </li>
-                                                
-                                                <li id='sex'> 
-                                                    <a suda-data="key=tblog_search_user&amp;value=user_filter_gender_all" class="W_moredownb" node-type="show_gender">
-                                                      <span>不限性别</span>
-                                                      <span class="more"></span>
-                                                    </a>
+								  <div class="form-group">
+								  	<label for="txt_departmentname">昵称</label>
+								  	<input type="text" name="txt_departmentname" class="form-control" id="txt_departmentname" placeholder="部门名称">
+								  </div>
+								  <div class="form-group">
+								  	<label for="txt_parentdepartment">标签</label>
+								  	<input type="text" name="txt_parentdepartment" class="form-control" id="txt_parentdepartment" placeholder="上级部门">
+								  </div>
+								  <div class="form-group">
+								  	<label for="txt_departmentlevel">学校</label>
+								  	<input type="text" name="txt_departmentlevel" class="form-control" id="txt_departmentlevel" placeholder="部门级别">
+								  </div>
+								  <div class="form-group">
+								  	<label for="txt_statu">公司</label>
+								  	<input type="text" name="txt_statu" class="form-control" id="txt_statu" placeholder="状态">
+								  </div>
+								<div class="form-group">
+									  <label for="txt_departmentlevel">性别</label>
+									  <ul class="nav nav-pills">
+											<li class="dropdown all-camera-dropdown">
+												<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+													不限
+													<b class="caret"></b>
+												</a>
+												<ul class="dropdown-menu">
+													<li data-filter-camera-type="all"><a data-toggle="tab" href="#">男</a></li>
+													<li data-filter-camera-type="Alpha"><a data-toggle="tab" href="#">女</a></li>
+													
+												</ul>
+											</li>
+										</ul>
+								  </div>
+								
+								  <div class="form-group">
+									  <label for="txt_departmentlevel">年龄</label>
+									  <ul class="nav nav-pills">
+											<li class="dropdown all-camera-dropdown">
+												<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+													不限
+													<b class="caret"></b>
+												</a>
+												<ul class="dropdown-menu">
+													<li data-filter-camera-type="all"><a data-toggle="tab" href="#">18岁以下</a></li>
+													<li data-filter-camera-type="Alpha"><a data-toggle="tab" href="#">19岁————22岁</a></li>
+													<li data-filter-camera-type="Zed"><a data-toggle="tab" href="#">23岁————29岁</a></li>
+													<li data-filter-camera-type="Bravo"><a data-toggle="tab" href="#">30岁————39岁</a></li>
+													<li data-filter-camera-type="Bravo"><a data-toggle="tab" href="#">40岁以上</a></li>
+												</ul>
+											</li>
+										</ul>
+								  </div>
+									
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+								</button>
+								<button type="button" class="btn btn-primary">
+									搜索
+								</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal -->
+				</div>
+	            <!-- <div class="search_head_action">
+	                <p class="action_txt">
+	                    <a href="javascript:void(0);" class="adv_settiong" node-type="advsearchUser" suda-data="key=tblog_search_user&amp;value=user_profes">高级搜索</a>
+	                    <a href="http://s.weibo.com/preferences" class="setting" target="_blank" suda-data="key=tblog_search_user&amp;value=user_set">设置</a>
+	                    <a href="http://help.weibo.com/newtopic/search" target="_blank" suda-data="key=tblog_search_user&amp;value=user_help" class="adv_settiong">帮助</a>
+	                </p>
+	            </div> -->
+	        </div>
+	        <div class="S_plwrap">
+	            <div class="S_plc" id="plc_main">
+	                <div class="S_content clearfix">
+	                    <div class="S_content_l">
+	                        
 
-                                                </li>
-                                                <li><em class="W_vline">|</em></li>
-                                                <li id='age'> 
-                                                    <a  suda-data="key=tblog_search_user&amp;value=user_filter_age_all" href="javascript:;" class="W_moredownb" node-type="showAgeLayer">
-                                                   <span >不限年龄</span>
-                                                   <span class="more"></span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="tab_r">
-                                            <a href="javascript:;" suda-data="key=tblog_search_user&amp;value=user_filter_more" class="more_factor" node-type="moreFactor">更多条件
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <ul class="search_more_ul search_more_ul_04 clearfix" id='usrsex' style="display: none; position: relative;width: 62px; left: 12%;top: -10px;" >
-                                            <li>	
-                                                <a href="" action-data="gender=all" action-type="gender" class="current"><span class="txt">不限</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" action-data="gender=man" action-type="gender"><span class="txt">男</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" action-data="gender=women" action-type="gender"><span class="txt">女</span></a>
-                                            </li>
-                                        </ul>
-                                        <ul class="search_more_ul search_more_ul_04 clearfix"  style="display: none; width: 68px; left: 143px; top: 217px;" node-type ="userGenderWrap" >
-                                            <li>
-                                                <a href="javascript:void(0);" action-data="sort=all" action-type="sort"  class="current"><span class="txt">不限</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" action-data="sort=org_vip" action-type="sort"><span class="txt">机构认证</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" action-data="sort=per_vip" action-type="sort"><span class="txt">个人认证</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" action-data="sort=ord" action-type="sort"><span class="txt">普通用户</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="search_more_ul search_more_ul_04 clearfix" style="display: none; position:relative;width: 70px; left: 25%;top:-10px;" id="ageselect">
-                                            <li><a href="javascript:void(0);" action-data="age=all" action-type="age" class="current"><span class="txt">不限</span></a></li>
-                                            <li><a href="javascript:void(0);" action-data="age=18y" action-type="age"><span class="txt">18岁以下</span></a></li>
-                                            <li><a href="javascript:void(0);" action-data="age=22y" action-type="age"><span class="txt">19~22岁</span></a></li>
-                                            <li><a href="javascript:void(0);" action-data="age=29y" action-type="age"><span class="txt">23~29岁</span></a></li>
-                                            <li><a href="javascript:void(0);" action-data="age=39y" action-type="age"><span class="txt">30~39岁</span></a></li>
-                                            <li><a href="javascript:void(0);" action-data="age=40y" action-type="age"><span class="txt">40岁以上</span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
+	                        <div id="pl_user_filtertab">
+	                            <div class="WB_cardwrap S_bg2">
+	                                <div class="search_tab clearfix" node-type="filtertab">
+	                                    <div class="basic_search clearfix">
+	                                        <div class="tab_l">
+	                                            <ul class="tab_list">
+	                                                
+	                                                <li >  
+	                                                    <a class="W_moredownb" node-type="showSortLayer ">
+	                                                      <span>所有用户</span>
+	                                                      <span class="more"></span>
+	                                                    </a>
 
-                        <div class="WB_cardwrap S_bg2">
-                            <div id="pl_user_feedList">
-                                <div class="WB_cardwrap S_bg2">
-                                    <div class="search_feed">
-                                        <div class="person_list_feed clearfix">
-                                            <div class="pl_personlist" id="user_list">
-                                                <div class="list_person clearfix">
-                                                    <div class="person_pic"><a target="_blank" href="http://weibo.com/dlpolice?refer_flag=1001030201_" title="大连公安" suda-data="key=tblog_search_user&amp;value=user_feed_1_icon"><img class="W_face_radius" src="weibo_files/68f1ab15jw1e8qgp5bmzyj2050050aa8.jpg" usercard="id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="1760668437" height="80" width="80"></a>
-                                                    </div>
-                                                    <div class="person_adbtn">
-                                                        <a href="javascript:void(0);" class="W_btn_b6 W_fr" action-data="type=followed&amp;refer_lflag=1001030201_" wforce="0" uid="1760668437" action-type="follow" suda-data="key=tblog_search_user&amp;value=user_feed_1_follow"><em title="关注" class="W_ficon ficon_add S_ficon">+</em>关注
-                                                        </a>
-                                                    </div>
-                                                    <div class="person_detail">
-                                                        <p class="person_name">
-                                                            <a class="W_texta W_fb" target="_blank" href="http://weibo.com/dlpolice?refer_flag=1001030201_" title="大连公安" usercard="id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="1760668437" suda-data="key=tblog_search_user&amp;value=user_feed_1_name">
-                                                            <em class="red" usercard="id=1760668437">大连</em>公安局
-                                                            </a>
-                                                            <a target="_blank" href="http://verified.weibo.com/verify" title="微博机构认证" alt="微博机构认证" class="W_icon icon_approve_co"></a><a href="http://vip.weibo.com/personal?from=search" target="_blank" title="微博会员"><i class="W_icon ico_member4"></i></a>
-                                                        </p>
-                                                        <p class="person_addr">
-                                                            <span class="male m_icon" title="男"></span>
-                                                            <span>辽宁，大连</span>
-                                                            <a class="W_linkb" target="_blank" href="http://weibo.com/dlpolice?refer_flag=1001030201_" suda-data="key=tblog_search_user&amp;value=user_feed_1_url">http://weibo.com/dlpolice</a>
-                                                        </p>
-                                                        <p class="person_card">
-                                                            <em class="red">大连
-                                                            </em>
-                                                            市公安局官方微博
-                                                        </p>
-                                                        <p class="person_num">
-                                                            <span>关注<a class="W_linkb" href="http://weibo.com/1760668437/follow?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_1_num">1665</a></span>
-                                                            <span>粉丝<a class="W_linkb" href="http://weibo.com/1760668437/fans?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_1_num">62万</a></span>
-                                                            <span>微博<a class="W_linkb" href="http://weibo.com/1760668437/profile?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_1_num">23947</a></span></p>
-                                                        <p class="person_label">标签：
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E6%2596%25B0%25E9%2597%25BB%25E4%25B8%25AD%25E5%25BF%2583&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_1_label">新闻中心</a>
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E6%2594%25BF%25E6%25B2%25BB%25E9%2583%25A8%25E5%25AE%25A3%25E4%25BC%25A0%25E5%25A4%2584&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_1_label">政治部宣传处</a>
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_1_label">大连市公安局</a>
-                                                        </p>
-                                                        <p class="person_label">职业信息：
-                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;work=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_company" suda-data="key=tblog_search_user&amp;value=user_feed_1_job">大连市公安局
-                                                            </a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>   
-                  </div>
-                </div>
-        </div>
-      </div>
-   
-  </div>
-</div>
+	                                                </li>
+	                                                <li>
+	                                                  <em class="W_vline">|</em>
+	                                                </li>
+	                                                
+	                                                <li id='sex'> 
+	                                                    <a suda-data="key=tblog_search_user&amp;value=user_filter_gender_all" class="W_moredownb" node-type="show_gender">
+	                                                      <span>不限性别</span>
+	                                                      <span class="more"></span>
+	                                                    </a>
+
+	                                                </li>
+	                                                <li><em class="W_vline">|</em></li>
+	                                                <li id='age'> 
+	                                                    <a  suda-data="key=tblog_search_user&amp;value=user_filter_age_all" href="javascript:;" class="W_moredownb" node-type="showAgeLayer">
+	                                                   <span >不限年龄</span>
+	                                                   <span class="more"></span></a>
+	                                                </li>
+	                                            </ul>
+	                                        </div>
+	                                        <div class="tab_r" onclick="condition()">
+	                                            <a href="javascript:;" suda-data="key=tblog_search_user&amp;value=user_filter_more" class="more_factor" node-type="moreFactor">更多条件
+	                                            </a>
+	                                        </div>
+	                                    </div>
+	                                    <div>
+	                                        <ul class="search_more_ul search_more_ul_04 clearfix" id='usrsex' style="display: none; position: relative;width: 62px; left: 12%;top: -10px;" >
+	                                            <li>	
+	                                                <a href="" action-data="gender=all" action-type="gender" class="current"><span class="txt">不限</span></a>
+	                                            </li>
+	                                            <li>
+	                                                <a href="javascript:void(0);" action-data="gender=man" action-type="gender"><span class="txt">男</span></a>
+	                                            </li>
+	                                            <li>
+	                                                <a href="javascript:void(0);" action-data="gender=women" action-type="gender"><span class="txt">女</span></a>
+	                                            </li>
+	                                        </ul>
+	                                        <ul class="search_more_ul search_more_ul_04 clearfix"  style="display: none; width: 68px; left: 143px; top: 217px;" node-type ="userGenderWrap" >
+	                                            <li>
+	                                                <a href="javascript:void(0);" action-data="sort=all" action-type="sort"  class="current"><span class="txt">不限</span>
+	                                                </a>
+	                                            </li>
+	                                            <li>
+	                                                <a href="javascript:void(0);" action-data="sort=org_vip" action-type="sort"><span class="txt">机构认证</span>
+	                                                </a>
+	                                            </li>
+	                                            <li>
+	                                                <a href="javascript:void(0);" action-data="sort=per_vip" action-type="sort"><span class="txt">个人认证</span>
+	                                                </a>
+	                                            </li>
+	                                            <li>
+	                                                <a href="javascript:void(0);" action-data="sort=ord" action-type="sort"><span class="txt">普通用户</span>
+	                                                </a>
+	                                            </li>
+	                                        </ul>
+	                                        <ul class="search_more_ul search_more_ul_04 clearfix" style="display: none; position:relative;width: 70px; left: 25%;top:-10px;" id="ageselect">
+	                                            <li><a href="javascript:void(0);" action-data="age=all" action-type="age" class="current"><span class="txt">不限</span></a></li>
+	                                            <li><a href="javascript:void(0);" action-data="age=18y" action-type="age"><span class="txt">18岁以下</span></a></li>
+	                                            <li><a href="javascript:void(0);" action-data="age=22y" action-type="age"><span class="txt">19~22岁</span></a></li>
+	                                            <li><a href="javascript:void(0);" action-data="age=29y" action-type="age"><span class="txt">23~29岁</span></a></li>
+	                                            <li><a href="javascript:void(0);" action-data="age=39y" action-type="age"><span class="txt">30~39岁</span></a></li>
+	                                            <li><a href="javascript:void(0);" action-data="age=40y" action-type="age"><span class="txt">40岁以上</span></a></li>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        
+
+	                        <div class="WB_cardwrap S_bg2">
+	                            <div id="pl_user_feedList">
+	                                <div class="WB_cardwrap S_bg2">
+	                                    <div class="search_feed">
+	                                        <div class="person_list_feed clearfix">
+	                                            <div class="pl_personlist" id="user_list">
+	                                                <div class="list_person clearfix">
+	                                                    <div class="person_pic"><a target="_blank" href="http://weibo.com/dlpolice?refer_flag=1001030201_" title="大连公安" suda-data="key=tblog_search_user&amp;value=user_feed_1_icon"><img class="W_face_radius" src="weibo_files/68f1ab15jw1e8qgp5bmzyj2050050aa8.jpg" usercard="id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="1760668437" height="80" width="80"></a>
+	                                                    </div>
+	                                                    <div class="person_adbtn">
+	                                                        <a href="javascript:void(0);" class="W_btn_b6 W_fr" action-data="type=followed&amp;refer_lflag=1001030201_" wforce="0" uid="1760668437" action-type="follow" suda-data="key=tblog_search_user&amp;value=user_feed_1_follow"><em title="关注" class="W_ficon ficon_add S_ficon">+</em>关注
+	                                                        </a>
+	                                                    </div>
+	                                                    <div class="person_detail">
+	                                                        <p class="person_name">
+	                                                            <a class="W_texta W_fb" target="_blank" href="http://weibo.com/dlpolice?refer_flag=1001030201_" title="大连公安" usercard="id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_" uid="1760668437" suda-data="key=tblog_search_user&amp;value=user_feed_1_name">
+	                                                            <em class="red" usercard="id=1760668437">大连</em>公安局
+	                                                            </a>
+	                                                            <a target="_blank" href="http://verified.weibo.com/verify" title="微博机构认证" alt="微博机构认证" class="W_icon icon_approve_co"></a><a href="http://vip.weibo.com/personal?from=search" target="_blank" title="微博会员"><i class="W_icon ico_member4"></i></a>
+	                                                        </p>
+	                                                        <p class="person_addr">
+	                                                            <span class="male m_icon" title="男"></span>
+	                                                            <span>辽宁，大连</span>
+	                                                            <a class="W_linkb" target="_blank" href="http://weibo.com/dlpolice?refer_flag=1001030201_" suda-data="key=tblog_search_user&amp;value=user_feed_1_url">http://weibo.com/dlpolice</a>
+	                                                        </p>
+	                                                        <p class="person_card">
+	                                                            <em class="red">大连
+	                                                            </em>
+	                                                            市公安局官方微博
+	                                                        </p>
+	                                                        <p class="person_num">
+	                                                            <span>关注<a class="W_linkb" href="http://weibo.com/1760668437/follow?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_1_num">1665</a></span>
+	                                                            <span>粉丝<a class="W_linkb" href="http://weibo.com/1760668437/fans?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_1_num">62万</a></span>
+	                                                            <span>微博<a class="W_linkb" href="http://weibo.com/1760668437/profile?refer_flag=1001030201_" target="_blank" suda-data="key=tblog_search_user&amp;value=user_feed_1_num">23947</a></span></p>
+	                                                        <p class="person_label">标签：
+	                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E6%2596%25B0%25E9%2597%25BB%25E4%25B8%25AD%25E5%25BF%2583&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_1_label">新闻中心</a>
+	                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E6%2594%25BF%25E6%25B2%25BB%25E9%2583%25A8%25E5%25AE%25A3%25E4%25BC%25A0%25E5%25A4%2584&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_1_label">政治部宣传处</a>
+	                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_tag" suda-data="key=tblog_search_user&amp;value=user_feed_1_label">大连市公安局</a>
+	                                                        </p>
+	                                                        <p class="person_label">职业信息：
+	                                                            <a class="W_linkb" href="http://s.weibo.com/user/&amp;work=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_company" suda-data="key=tblog_search_user&amp;value=user_feed_1_job">大连市公安局
+	                                                            </a>
+	                                                        </p>
+	                                                    </div>
+	                                                </div>
+	                                           </div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>   
+	                  </div>
+	                </div>
+	        </div>
+	      </div>
+	   
+	  	</div>
+	</div>
 <!-- <div class="S_gotop" id="base_scrollToTop" style="">
   <a suda-data="key=tblog_search_weibo&amp;value=weibo_up" node-type="scrollToTop" class="W_gotop S_ficon_bg" href="javascript:void(0);" style=""><em class="W_ficon ficon_backtop S_bg2_c">Ú</em></a> </div>
   <div style="display:none;" id="pl_common_base"></div> -->
@@ -286,85 +367,109 @@
   function showhh()
   {
       //  var thisURL = document.URL;
-      // //thisURL=encodeURI(thisURL)
-      // //alert(encodeURI(encodeURI(thisURL)))
-      // // alert(thisURL)
+      // // //thisURL=encodeURI(thisURL)
+      // // //alert(encodeURI(encodeURI(thisURL)))
+      // // // alert(thisURL)
       // var  getval =thisURL.split('?')[1];
-      // // alert(getval)
-      // var  a= getval.split("=")[1];6 
+      // // // alert(getval)
+      // var   tag= getval.split("=")[1];
       // // var p=0;
         
-      $('#user_list').empty();
-        // $.post("/query_solr/",{'content':decodeURI(a)}, function(data,status){
-        //   if (status == 'success'){
-        //     var json=eval(data);
+      // $('#user_list').empty();
+    //   $.ajax({
+    //     url:'http://183.174.228.77:8080/tag_Recommendation?tags=NBA',
+    //     dataType:'jsonp',
+    //     jsonp:'function_name_index',
+    //     jsonpCallback:'function_name',
+    //     success:function(data){
+    //         alert(data.msg);
+    //     }
+    // });
+        $.getJSON("http://183.174.228.77:8080/tag_Recommendation?tags=NBA", function(data){
+        	alert(data);
+	          // if (status == 'success'){
+	          // 	// var s = eval('('+data+')');
+	          // 	alert(data);
 
-            for (var i = 0; i < 10; i++){
-            // // alert(1);
-              var html="";
+	          // }
+	          // else
+	          // {
+	          // 	alert('fail');
+	          // }
+        });
+      
+		// }
+        // var data = '{"昵称":体育集锦,"粉丝数":249 ,"关注数":2025 ,"微博数":7284 ,"性别":男,"所在地":广东 广州,"简介":共同找寻、回味那曾经经典的体育瞬间，为你带来集锦般的享受,"标签":台球 网球 排球 乒乓球 运动会 羽毛球 足球 nike 电影 NBA,"博客链接":NULL };'
+        // var data = '{"昵称":"体育集锦"},{"关注数":"2025" }';//','{"关注数目":"2025"}';
+        // 
+        // var y = json[0];
+        		// alert(data);
+            // for (var i = 0; i < 10; i++){
+        //     // // alert(1);
+        //       var html="";
              
 
-              html+="<div class=\"list_person clearfix\">";
-              html+="<div class=\"person_pic\">";
-              html+="<a target=\"_blank\" href=\"http:\/\/weibo.com/dlpolice?refer_flag=1001030201_\" title=\"大连公安\" suda-data=\"key=tblog_search_user&&amp;value=user_feed_1_icon\">";
-              html += "<img class=\"W_face_radius\" src=\"weibo_files\/68f1ab15jw1e8qgp5bmzyj2050050aa8.jpg\" usercard=\"id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_\" uid=\"1760668437\" height=\"80\" width=\"80\">"+"<\/a>";
-              html+="<\/div>";
+        //       html+="<div class=\"list_person clearfix\">";
+        //       html+="<div class=\"person_pic\">";
+        //       html+="<a target=\"_blank\" href=\"http:\/\/weibo.com/dlpolice?refer_flag=1001030201_\" title=\"大连公安\" suda-data=\"key=tblog_search_user&&amp;value=user_feed_1_icon\">";
+        //       html += "<img class=\"W_face_radius\" src=\"weibo_files\/68f1ab15jw1e8qgp5bmzyj2050050aa8.jpg\" usercard=\"id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_\" uid=\"1760668437\" height=\"80\" width=\"80\">"+"<\/a>";
+        //       html+="<\/div>";
               
-              html += "<div class=\"person_adbtn\">";
-              html += "<a href=\"javascript:void(0);\" class=\"W_btn_b6 W_fr\" action-data=\"type=followed&amp;refer_lflag=1001030201_\" wforce=\"0\" uid=\"1760668437\" action-type=\"follow\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_follow\">";
-              html += "<em title=\"关注\" class=\"W_ficon ficon_add S_ficon\">+<\/em>关注";
-              html += "<\/a>";
-              html += "<\/div>";
+        //       html += "<div class=\"person_adbtn\">";
+        //       html += "<a href=\"javascript:void(0);\" class=\"W_btn_b6 W_fr\" action-data=\"type=followed&amp;refer_lflag=1001030201_\" wforce=\"0\" uid=\"1760668437\" action-type=\"follow\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_follow\">";
+        //       html += "<em title=\"关注\" class=\"W_ficon ficon_add S_ficon\">+<\/em>关注";
+        //       html += "<\/a>";
+        //       html += "<\/div>";
 
-              html += "<div class=\"person_detail\">";
-              html += "<p class=\"person_name\">";
-              html += "<a class=\"W_texta W_fb\" target=\"_blank\" href=\"http:\/\/weibo.com/dlpolice?refer_flag=1001030201_\" title=\"大连公安\" usercard=\"id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_\" uid=\"1760668437\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_name\">";
-              html += "<em class=\"red\" usercard=\"id=1760668437\">大连<\/em>公安dsadsa";
-              html += "<\/a>";
+        //       html += "<div class=\"person_detail\">";
+        //       html += "<p class=\"person_name\">";
+        //       html += "<a class=\"W_texta W_fb\" target=\"_blank\" href=\"http:\/\/weibo.com/dlpolice?refer_flag=1001030201_\" title=\"大连公安\" usercard=\"id=1760668437&amp;usercardkey=user_mp&amp;refer_flag=1001030201_\" uid=\"1760668437\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_name\">";
+        //       html += "<em class=\"red\" usercard=\"id=1760668437\">大连<\/em>公安dsadsa";
+        //       html += "<\/a>";
 
-              html += "<\/p>";
-              html += "<p class=\"person_addr\">";
-              html += "<span class=\"male m_icon\" title=\"男\">"+"</span>";
-              html += "<span>"+"辽宁，大连"+"</span>";
+        //       html += "<\/p>";
+        //       html += "<p class=\"person_addr\">";
+        //       html += "<span class=\"male m_icon\" title=\"男\">"+"</span>";
+        //       html += "<span>"+"辽宁，大连"+"</span>";
 
-              html += "<a class=\"W_linkb\" target=\"_blank\" href=\"http:\/\/weibo.com\/dlpolice?refer_flag=1001030201_\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_url\">"+"http:\/\/weibo.com\/dlpolice<\/a>";
-              html += "<\/p>";
+        //       html += "<a class=\"W_linkb\" target=\"_blank\" href=\"http:\/\/weibo.com\/dlpolice?refer_flag=1001030201_\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_url\">"+"http:\/\/weibo.com\/dlpolice<\/a>";
+        //       html += "<\/p>";
 
-              html += "<p class=\"person_card\">";
-              html += "<em class=\"red\">大连<\/em>市公安局官方微博";
-              html += "<\/p>";
+        //       html += "<p class=\"person_card\">";
+        //       html += "<em class=\"red\">大连<\/em>市公安局官方微博";
+        //       html += "<\/p>";
 
 
-              html += "<p class=\"person_num\">";
-              html += "<span>关注<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/follow?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">1665"+"<\/a>"+"<\/span>";
-              html += "<span>粉丝<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/fans?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">62万"+"<\/a>"+"<\/span>";
-              html += "<span>微博<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/profile?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">23947" + "<\/a>"+ "<\/span>";
-              html += "<\/p>";
+        //       html += "<p class=\"person_num\">";
+        //       html += "<span>关注<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/follow?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">1665"+"<\/a>"+"<\/span>";
+        //       html += "<span>粉丝<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/fans?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">62万"+"<\/a>"+"<\/span>";
+        //       html += "<span>微博<a class=\"W_linkb\" href=\"http:\/\/weibo.com/1760668437/profile?refer_flag=1001030201_\" target=\"_blank\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_num\">23947" + "<\/a>"+ "<\/span>";
+        //       html += "<\/p>";
 
-              html += "<p class=\"person_label\">标签：";
-              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E6%2596%25B0%25E9%2597%25BB%25E4%25B8%25AD%25E5%25BF%2583&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\>新闻中心"+"</a>";
-              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E6%2594%25BF%25E6%25B2%25BB%25E9%2583%25A8%25E5%25AE%25A3%25E4%25BC%25A0%25E5%25A4%2584&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\">政治部宣传处"+"</a>";
-              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\">大连市公安局局长"+"<\/a>"+"<\/p>";
+        //       html += "<p class=\"person_label\">标签：";
+        //       html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E6%2596%25B0%25E9%2597%25BB%25E4%25B8%25AD%25E5%25BF%2583&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\>新闻中心"+"</a>";
+        //       html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E6%2594%25BF%25E6%25B2%25BB%25E9%2583%25A8%25E5%25AE%25A3%25E4%25BC%25A0%25E5%25A4%2584&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\">政治部宣传处"+"</a>";
+        //       html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;tag=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_tag\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_label\">大连市公安局局长"+"<\/a>"+"<\/p>";
 
-              html += "<p class=\"person_label\">职业信息：";
-              html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;work=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_company\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_job\">大连市公安局"+"<\/a>";
-              html += "<\/p>";
-              html += "<\/div>";
-              html += "<\/div>";
+        //       html += "<p class=\"person_label\">职业信息：";
+        //       html += "<a class=\"W_linkb\" href=\"http:\/\/s.weibo.com\/user\/&amp;work=%25E5%25A4%25A7%25E8%25BF%259E%25E5%25B8%2582%25E5%2585%25AC%25E5%25AE%2589%25E5%25B1%2580&amp;Refer=SUer_company\" suda-data=\"key=tblog_search_user&amp;value=user_feed_1_job\">大连市公安局"+"<\/a>";
+        //       html += "<\/p>";
+        //       html += "<\/div>";
+        //       html += "<\/div>";
 
-              $('#user_list').append(html);
-              // alert(html)
-        // alert("hello");
+        //       $('#user_list').append(html);
+        // //       // alert(html)
+        // // // alert("hello");
 
-            // }
-          }
+        // //     // }
+        //   }
            // alert(1);
                       // else{
           //     alert('0 user!');
           //   }
        
   }
-  showhh();
+  // showhh();
 </script>
 
 </body>

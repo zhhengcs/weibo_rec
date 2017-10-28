@@ -58,17 +58,35 @@
         $("#sex").mouseover(function(){
             // alert(1);       
             $("#usrsex").show();
+            $('#ageselect').hide();
               // $("#usrsex").css('display','block');//.css('width', '68px').css('left', '143px').css('top','217px');
         });
-        $("#sex-list").mouseover(function(){
+        $("#usrsex").mouseover(function(){
             // alert(1);       
             $("#usrsex").show();
+            // $('#ageselect').show();
+
               // $("#usrsex").css('display','block');//.css('width', '68px').css('left', '143px').css('top','217px');
         });
-        $("#sex-list").mouseout(function(){
+        $("#usrsex").mouseout(function(){
             // alert(1);
               $("#usrsex").hide();
         });
+
+
+        $("#age").mouseover(function(){
+        	$("#ageselect").show();
+        	$("usrsex").hide();
+        });
+        $("#ageselect").mouseover(function(){
+        	$("#ageselect").show();
+        	// $("usrsex").hide();
+        });
+        $("#ageselect").mouseout(function(){
+        	$("#ageselect").hide();
+        	// $("usrsex").hide();
+        });
+        
     })
     </script>  
     
@@ -136,9 +154,10 @@
                                                       <span>不限性别</span>
                                                       <span class="more"></span>
                                                     </a>
+
                                                 </li>
                                                 <li><em class="W_vline">|</em></li>
-                                                <li > 
+                                                <li id='age'> 
                                                     <a  suda-data="key=tblog_search_user&amp;value=user_filter_age_all" href="javascript:;" class="W_moredownb" node-type="showAgeLayer">
                                                    <span >不限年龄</span>
                                                    <span class="more"></span></a>
@@ -150,9 +169,9 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div id = 'sex-list'>
-                                        <ul class="search_more_ul search_more_ul_04 clearfix" id='usrsex' style="display: none; width: 62px; left: 220px; top: 217px;" >
-                                            <li>
+                                    <div>
+                                        <ul class="search_more_ul search_more_ul_04 clearfix" id='usrsex' style="display: none; position: relative;width: 62px; left: 12%;top: -10px;" >
+                                            <li>	
                                                 <a href="" action-data="gender=all" action-type="gender" class="current"><span class="txt">不限</span></a>
                                             </li>
                                             <li>
@@ -180,7 +199,7 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <ul class="search_more_ul search_more_ul_04 clearfix" style="display: none; width: 70px; left: 300px; top: 217px;" >
+                                        <ul class="search_more_ul search_more_ul_04 clearfix" style="display: none; position:relative;width: 70px; left: 25%;top:-10px;" id="ageselect">
                                             <li><a href="javascript:void(0);" action-data="age=all" action-type="age" class="current"><span class="txt">不限</span></a></li>
                                             <li><a href="javascript:void(0);" action-data="age=18y" action-type="age"><span class="txt">18岁以下</span></a></li>
                                             <li><a href="javascript:void(0);" action-data="age=22y" action-type="age"><span class="txt">19~22岁</span></a></li>

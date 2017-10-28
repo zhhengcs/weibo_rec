@@ -48,15 +48,36 @@
     <link type="text/css" rel="stylesheet" charset="utf-8" href="weibo_files/connect_layer.css">
 <!--     <script type="text/javascript" src="weibo_files/ytbxtre-a.js"></script> -->
 
-    <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
-    </script> -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+    <script src="weibo_files/jquery.js">
     </script>
+    <script type="text/javascript">
+    // alert(1);
+    
+    // alert(1);
+    $(function(){
+        $("#sex").mouseover(function(){
+            // alert(1);       
+            $("#usrsex").show();
+              // $("#usrsex").css('display','block');//.css('width', '68px').css('left', '143px').css('top','217px');
+        });
+        $("#sex-list").mouseover(function(){
+            // alert(1);       
+            $("#usrsex").show();
+              // $("#usrsex").css('display','block');//.css('width', '68px').css('left', '143px').css('top','217px');
+        });
+        $("#sex-list").mouseout(function(){
+            // alert(1);
+              $("#usrsex").hide();
+        });
+    })
+    </script>  
     
 </head>
 
-<body onload="showhh()" class="S_person">
-  
+<body class="S_person">
+
+
+
     <div class="S_wrap ">
     <div class="S_main">
       <div class="S_main_bg">
@@ -90,80 +111,7 @@
             <div class="S_plc" id="plc_main">
                 <div class="S_content clearfix">
                     <div class="S_content_l">
-                        <div id="pl_common_pinyinerr">
-                        </div>
-                        <div id="pl_common_totalshow">
-                            <div class="WB_tab_a">
-                                <div class="tab_box tab_box_a tab_box_a_r5 clearfix">
-                                    <ul class="tab W_fl clearfix">
-                                        <li class="li_first S_bg2"></li>
-                                        <li class="curr">
-                                          <a class="S_txt1" suda-data="key=tblog_search_user&amp;value=user_filter_all" href="javascript:void(0)">
-                                          <span class="t S_bg2" action-type="search" action-data="flag=all">全部</span>
-                                          <span class="b">
-                                          <span class="b1">
-                                          <em class="l"><i class="S_bg2"></i></em>
-                                          <em class="r"><i class="S_bg2"></i></em>
-                                          </span>
-                                          <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
-                                          </span>
-                                          </a>
-                                        </li>
-                                        <li class="S_bg2">
-                                            <a class="S_txt1" suda-data="key=tblog_search_user&amp;value=user_filter_name" href="javascript:void(0)">
-                                            <span class="t S_bg2" action-type="search" action-data="flag=nickname">昵称</span>
-                                            <span class="b">
-                                              <span class="b1">
-                                                <em class="l"><i class="S_bg2"></i></em>
-                                                <em class="r"><i class="S_bg2"></i></em>
-                                              </span>
-                                              <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
-                                            </span>
-                                            </a>
-                                        </li>
-                                        <li class="S_bg2">
-                                            <a class="S_txt1" suda-data="key=tblog_search_user&amp;value=user_filter_label" href="javascript:void(0)">
-                                            <span class="t S_bg2" action-type="search" action-data="flag=tag">标签</span>
-                                            <span class="b">
-                                            <span class="b1">
-                                            <em class="l"><i class="S_bg2"></i></em>
-                                            <em class="r"><i class="S_bg2"></i></em>
-                                            </span>
-                                            <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
-                                            </span>
-                                            </a>
-                                        </li>
-                                        <li class="S_bg2">
-                                            <a class="S_txt1" suda-data="key=tblog_search_user&amp;value=user_filter_school" href="javascript:void(0)">
-                                              <span class="t S_bg2" action-type="search" action-data="flag=school">学校</span>
-                                              <span class="b">
-                                              <span class="b1">
-                                                <em class="l"><i class="S_bg2"></i></em>
-                                                <em class="r"><i class="S_bg2"></i></em>
-                                              </span>
-                                              <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
-                                              </span>
-                                            </a>
-                                        </li>
-                                        <li class="S_bg2">
-                                            <a class="S_txt1" suda-data="key=tblog_search_user&amp;value=user_filter_firm" href="javascript:void(0)">
-                                              <span class="t S_bg2" action-type="search" action-data="flag=work">公司</span>
-                                              <span class="b">
-                                              <span class="b1">
-                                                <em class="l"><i class="S_bg2"></i></em>
-                                                <em class="r"><i class="S_bg2"></i></em>
-                                               </span>
-                                              <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
-                                              </span>
-                                            </a>
-                                        </li>
-                                        <li class="li_last S_bg2"></li>
-                                    </ul>
-                                    <div class="fr_box W_fr S_bg2">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                         <div id="pl_user_filtertab">
                             <div class="WB_cardwrap S_bg2">
@@ -171,33 +119,28 @@
                                     <div class="basic_search clearfix">
                                         <div class="tab_l">
                                             <ul class="tab_list">
-                                                <li>所有地区
-                                                  <a suda-data="key=tblog_search_user&amp;value=user_filter_change" href="javascript:;" class="change" node-type="show_region">[切换]
-                                                  </a>
-                                                </li>
-                                                <li>
-                                                  <em class="W_vline W_textb">|
-                                                  </em>
-                                                </li>
-                                                <li>
-                                                    <a suda-data="key=tblog_search_user&amp;value=user_filter_auth_all" href="javascript:;" class="W_moredownb" node-type="showSortLayer">
+                                                
+                                                <li >  
+                                                    <a class="W_moredownb" node-type="showSortLayer ">
                                                       <span>所有用户</span>
                                                       <span class="more"></span>
                                                     </a>
+
                                                 </li>
                                                 <li>
                                                   <em class="W_vline">|</em>
                                                 </li>
-                                                <li>
-                                                    <a suda-data="key=tblog_search_user&amp;value=user_filter_gender_all" href="javascript:;" class="W_moredownb" node-type="show_gender">
+                                                
+                                                <li id='sex'> 
+                                                    <a suda-data="key=tblog_search_user&amp;value=user_filter_gender_all" class="W_moredownb" node-type="show_gender">
                                                       <span>不限性别</span>
                                                       <span class="more"></span>
                                                     </a>
                                                 </li>
                                                 <li><em class="W_vline">|</em></li>
-                                                <li>
-                                                    <a suda-data="key=tblog_search_user&amp;value=user_filter_age_all" href="javascript:;" class="W_moredownb" node-type="showAgeLayer">
-                                                   <span>不限年龄</span>
+                                                <li > 
+                                                    <a  suda-data="key=tblog_search_user&amp;value=user_filter_age_all" href="javascript:;" class="W_moredownb" node-type="showAgeLayer">
+                                                   <span >不限年龄</span>
                                                    <span class="more"></span></a>
                                                 </li>
                                             </ul>
@@ -207,15 +150,21 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div>
-                                        <ul class="search_more_ul search_more_ul_03 clearfix" style="display: none; width: 62px; left: 331px; top: 267px;" node-type="userGenderWrap">
-                                            <li><a href="javascript:void(0);" action-data="gender=all" action-type="gender" class="current"><span class="txt">不限</span></a></li>
-                                            <li><a href="javascript:void(0);" action-data="gender=man" action-type="gender"><span class="txt">男</span></a></li>
-                                            <li><a href="javascript:void(0);" action-data="gender=women" action-type="gender"><span class="txt">女</span></a></li>
-                                        </ul>
-                                        <ul class="search_more_ul search_more_ul_04 clearfix" style="display: none; width: 68px; left: 253px; top: 267px;" node-type="userSortWrap">
+                                    <div id = 'sex-list'>
+                                        <ul class="search_more_ul search_more_ul_04 clearfix" id='usrsex' style="display: none; width: 62px; left: 220px; top: 217px;" >
                                             <li>
-                                                <a href="javascript:void(0);" action-data="sort=all" action-type="sort" class="current"><span class="txt">不限</span>
+                                                <a href="" action-data="gender=all" action-type="gender" class="current"><span class="txt">不限</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" action-data="gender=man" action-type="gender"><span class="txt">男</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" action-data="gender=women" action-type="gender"><span class="txt">女</span></a>
+                                            </li>
+                                        </ul>
+                                        <ul class="search_more_ul search_more_ul_04 clearfix"  style="display: none; width: 68px; left: 143px; top: 217px;" node-type ="userGenderWrap" >
+                                            <li>
+                                                <a href="javascript:void(0);" action-data="sort=all" action-type="sort"  class="current"><span class="txt">不限</span>
                                                 </a>
                                             </li>
                                             <li>
@@ -231,7 +180,7 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <ul class="search_more_ul search_more_ul_04 clearfix" style="display: none; width: 70px; left: 410px; top: 267px;" node-type="userAgeWrap">
+                                        <ul class="search_more_ul search_more_ul_04 clearfix" style="display: none; width: 70px; left: 300px; top: 217px;" >
                                             <li><a href="javascript:void(0);" action-data="age=all" action-type="age" class="current"><span class="txt">不限</span></a></li>
                                             <li><a href="javascript:void(0);" action-data="age=18y" action-type="age"><span class="txt">18岁以下</span></a></li>
                                             <li><a href="javascript:void(0);" action-data="age=22y" action-type="age"><span class="txt">19~22岁</span></a></li>
@@ -243,8 +192,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="pl_user_filtertips"> 
-                        </div>
+                        
 
                         <div class="WB_cardwrap S_bg2">
                             <div id="pl_user_feedList">
@@ -305,9 +253,9 @@
    
   </div>
 </div>
-<div class="S_gotop" id="base_scrollToTop" style="">
+<!-- <div class="S_gotop" id="base_scrollToTop" style="">
   <a suda-data="key=tblog_search_weibo&amp;value=weibo_up" node-type="scrollToTop" class="W_gotop S_ficon_bg" href="javascript:void(0);" style=""><em class="W_ficon ficon_backtop S_bg2_c">Ú</em></a> </div>
-  <div style="display:none;" id="pl_common_base"></div>
+  <div style="display:none;" id="pl_common_base"></div> -->
 <script type="text/javascript">
       function show(){
         alert(1);
@@ -326,11 +274,11 @@
       // // alert(getval)
       // var  a= getval.split("=")[1];6 
       // // var p=0;
-
+        
       $('#user_list').empty();
-        $.post("/query_solr/",{'content':decodeURI(a)}, function(data,status){
-          if (status == 'success'){
-            var json=eval(data);
+        // $.post("/query_solr/",{'content':decodeURI(a)}, function(data,status){
+        //   if (status == 'success'){
+        //     var json=eval(data);
 
             for (var i = 0; i < 10; i++){
             // // alert(1);
@@ -389,14 +337,15 @@
               // alert(html)
         // alert("hello");
 
-            }
+            // }
           }
-          else{
-              alert('0 user!');
-            }
+           // alert(1);
+                      // else{
+          //     alert('0 user!');
+          //   }
        
   }
-
+  showhh();
 </script>
 
 </body>
